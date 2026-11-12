@@ -3,6 +3,7 @@ Usage:  cd tools && npm install && python3 build.py content.json ../posts/YYYY-M
 content.json: {"date_label":"12 NOV 2026","slides":[
   {"type":"cover","title":"..","kicker":"..","summary":"..","source":"..",
    "photo":"../assets/library/pepper.jpg","credit":"Name / Wikimedia Commons (CC BY 4.0)","photo_tag":"ഫയൽ ചിത്രം","photo_pos":"center"},
+  {"type":"prices","title":"..","photo":"..","credit":"..","prices":[{"name":"ഏലയ്ക്ക","note":"ലേല ശരാശരി","value":"₹3,086"}],"note":".."}  (single-slide price poster, up to 7 rows),
   {"type":"weather","title":"..","photo":"..","credit":"..","weather":{"high":28,"low":19,"rain":10},"note":".."}  (single-slide weather post),
   {"type":"points","title":"..","points":["<strong>label:</strong> text", "..."]},
   {"type":"data","title":"..","weather":{"place":"അഗളി","high":28,"low":19,"rain":30},
@@ -84,6 +85,10 @@ h1.hsm{font-size:58px;line-height:1.2}
 .wxrow .big small{font-size:100px}
 .wxrow .line{font-size:42px;padding-bottom:26px}
 h1,h2,.head p,.pt strong{font-family:BC,MJ}
+.photo.psm{height:300px}
+.prow{display:flex;justify-content:space-between;align-items:center;font-family:BC,MJ;font-weight:700;font-size:36px;padding:13px 6px 8px;border-bottom:2px solid #c9cdce}
+.prow em{font-style:normal;font-weight:400;font-size:24px;color:#6c7275;margin-left:14px}
+.prow b{font-family:BC;font-size:52px;font-weight:700;color:var(--navy);line-height:1}
 .follow{text-align:center;margin-top:150px}
 .follow img{height:420px;mix-blend-mode:multiply}
 .follow .f1{font-family:MJ;font-weight:700;font-size:64px;color:var(--navy);margin-top:30px;line-height:1.3}
@@ -115,6 +120,11 @@ def render(s):
                 f'<div class="wxrow"><div class="big">{w["high"]}° <small>/ {w["low"]}°</small></div>'
                 f'<div class="line">കൂടിയത് / കുറഞ്ഞത്<br>മഴ സാധ്യത {w["rain"]}%</div></div>'
                 f'<div class="src">{s.get("note","")}</div>')
+    if t == 'prices':
+        rows = ''.join(f'<div class="prow"><span>{p["name"]}<em>{p.get("note","")}</em></span><b>{p["value"]}</b></div>' for p in s['prices'])
+        return (f'<div class="photo psm"><img src="{s["photo"]}" style="object-position:{s.get("photo_pos","center")}">'
+                f'<span class="pcredit">ചിത്രം: {s["credit"]}</span></div>'
+                f'<div class="head hp"><h2>{s["title"]}</h2></div>{rows}<div class="src">{s.get("note","")}</div>')
     if t == 'points':
         return f'<div class="head"><h2>{s["title"]}</h2></div>' + pts(s['points'])
     if t == 'data':
