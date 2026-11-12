@@ -1,1 +1,1 @@
-{"name":"newsattappadi-tools","private":true,"dependencies":{"@fontsource/manjari":"*","@fontsource/barlow-condensed":"*"}}
+{"name":"newsattappadi-tools","private":true,"dependencies":{"@fontsource/barlow-condensed":"*","@fontsource/manjari":"*","@iconify-json/fluent-emoji-flat":"^1.2.6"}}
