@@ -1,7 +1,9 @@
 """News Attappadi carousel builder.
 Usage:  cd tools && npm install && python3 build.py content.json ../posts/YYYY-MM-DD
 content.json: {"date_label":"12 NOV 2026","slides":[
-  {"type":"cover","title":"..","kicker":"..","summary":"..","source":".."},
+  {"type":"cover","title":"..","kicker":"..","summary":"..","source":"..",
+   "photo":"../assets/library/pepper.jpg","credit":"Name / Wikimedia Commons (CC BY 4.0)","photo_tag":"ഫയൽ ചിത്രം","photo_pos":"center"},
+  {"type":"weather","title":"..","photo":"..","credit":"..","weather":{"high":28,"low":19,"rain":10},"note":".."}  (single-slide weather post),
   {"type":"points","title":"..","points":["<strong>label:</strong> text", "..."]},
   {"type":"data","title":"..","weather":{"place":"അഗളി","high":28,"low":19,"rain":30},
    "prices_label":"വിപണി വില · നവംബർ 11","prices":[{"name":"ഏലയ്ക്ക","note":"ലേല ശരാശരി","value":"₹3,086"}]},
@@ -69,6 +71,19 @@ FOOT = '''<div class="foot"><div class="logo"><img src="brand/logo.jpg"><div cla
 
 
 CSS += """
+.photo{position:relative;margin-top:22px;height:500px;border-radius:22px;overflow:hidden;border:4px solid var(--grey)}
+.photo img{width:100%;height:100%;object-fit:cover;display:block}
+.pcredit{position:absolute;right:0;bottom:0;background:rgba(15,58,77,.82);color:#fff;font-family:BC,MJ;font-size:20px;padding:6px 14px 3px;border-top-left-radius:12px}
+.ptag{position:absolute;left:0;top:0;background:var(--blue);color:#fff;font-family:MJ;font-weight:700;font-size:24px;padding:9px 18px 5px;border-bottom-right-radius:14px}
+.head.hp{margin-top:20px;padding:28px 40px 22px}
+h1.hsm{font-size:58px;line-height:1.2}
+.head.hp p{font-size:30px;margin-top:8px}
+.sub.ssm{font-size:33px;line-height:1.45;margin-top:22px}
+.wxrow{display:flex;align-items:flex-end;justify-content:space-between;margin-top:30px;padding:0 10px}
+.wxrow .big{font-size:190px}
+.wxrow .big small{font-size:100px}
+.wxrow .line{font-size:42px;padding-bottom:26px}
+h1,h2,.head p,.pt strong{font-family:BC,MJ}
 .follow{text-align:center;margin-top:150px}
 .follow img{height:420px;mix-blend-mode:multiply}
 .follow .f1{font-family:MJ;font-weight:700;font-size:64px;color:var(--navy);margin-top:30px;line-height:1.3}
@@ -82,9 +97,24 @@ def pts(items):
 def render(s):
     t = s['type']
     if t == 'cover':
+        if s.get('photo'):
+            tagp = f'<span class="ptag">{s["photo_tag"]}</span>' if s.get('photo_tag') else ''
+            return (f'<div class="photo"><img src="{s["photo"]}" style="object-position:{s.get("photo_pos","center")}">{tagp}'
+                    f'<span class="pcredit">ചിത്രം: {s["credit"]}</span></div>'
+                    f'<div class="head hp"><h1 class="hsm">{s["title"]}</h1><p>{s.get("kicker","")}</p></div>'
+                    f'<div class="sub ssm">{s["summary"]}</div><div class="src">അവലംബം: {s["source"]}</div>'
+                    + ('' if s.get('single') else '<div class="swipe">വിശദാംശങ്ങൾ ➜</div>'))
         return (f'<div class="head"><h1>{s["title"]}</h1><p>{s.get("kicker","")}</p></div>'
                 f'<div class="sub">{s["summary"]}</div><div class="src">അവലംബം: {s["source"]}</div>'
                 '<div class="swipe">വിശദാംശങ്ങൾ ➜</div>')
+    if t == 'weather':
+        w = s['weather']
+        return (f'<div class="photo"><img src="{s["photo"]}" style="object-position:{s.get("photo_pos","center")}">'
+                f'<span class="pcredit">ചിത്രം: {s["credit"]}</span></div>'
+                f'<div class="head hp"><h2>{s["title"]}</h2></div>'
+                f'<div class="wxrow"><div class="big">{w["high"]}° <small>/ {w["low"]}°</small></div>'
+                f'<div class="line">കൂടിയത് / കുറഞ്ഞത്<br>മഴ സാധ്യത {w["rain"]}%</div></div>'
+                f'<div class="src">{s.get("note","")}</div>')
     if t == 'points':
         return f'<div class="head"><h2>{s["title"]}</h2></div>' + pts(s['points'])
     if t == 'data':
@@ -103,7 +133,8 @@ c = json.loads(pathlib.Path(sys.argv[1]).read_text(encoding='utf-8'))
 out = pathlib.Path(sys.argv[2]).resolve(); out.mkdir(parents=True, exist_ok=True)
 n = len(c['slides'])
 for i, s in enumerate(c['slides'], 1):
-    html = f'<!DOCTYPE html><html lang="ml"><head><meta charset="utf-8"><style>{CSS}</style></head><body>{PAPER}<div class="wrap"><span class="date">{c["date_label"]}</span><span class="tag">{i}/{n}</span>{render(s)}</div>{FOOT}</body></html>'
+    tag = '' if n == 1 else f'<span class="tag">{i}/{n}</span>'
+    html = f'<!DOCTYPE html><html lang="ml"><head><meta charset="utf-8"><style>{CSS}</style></head><body>{PAPER}<div class="wrap"><span class="date">{c["date_label"]}</span>{tag}{render(s)}</div>{FOOT}</body></html>'
     h = D / f'_slide{i}.html'; h.write_text(html, encoding='utf-8')
     subprocess.run(['google-chrome', '--headless=new', '--no-sandbox', '--disable-gpu', '--hide-scrollbars', '--window-size=1080,1350', '--virtual-time-budget=3000', f'--screenshot={out}/slide{i}.png', f'file://{h}'], capture_output=True)
     h.unlink()
