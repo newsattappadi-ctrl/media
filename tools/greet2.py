@@ -39,6 +39,9 @@ out = pathlib.Path(sys.argv[2]).resolve()
 for g in items:
     n = len(g['title'])
     fs = 92 if n <= 16 else (78 if n <= 24 else 66)
+    w = max(len(x) for x in g['title'].split())
+    if w >= 14: fs = min(fs, 70)
+    elif w >= 11: fs = min(fs, 80)
     kick = f'<div class="kick">{g["kicker"]}</div>' if g.get('kicker') else ''
     html = (f'<!DOCTYPE html><html lang="ml"><head><meta charset="utf-8"><style>{CSS}</style></head>'
             f'<body style="--ac:{g.get("accent","#e9c46a")};--fs:{fs}px"><img class="ph" src="{g["photo"]}" style="object-position:{g.get("pos","center")}">'
