@@ -66,8 +66,25 @@ POSTERS = {
         + '<div class="warn"><b>സുരക്ഷ ആദ്യം:</b> ആന ഇറങ്ങിയ സ്ഥലത്തോ അപകട സ്ഥലത്തോ ഫോട്ടോ എടുക്കാൻ അടുത്തേക്ക് പോകരുത്.</div>'),
 }
 
+LINK = 'chat.whatsapp.com/GfCtDsKvpep3Dk57UGE9PL'
+CSS += """
+.qrbox{margin:40px auto 0;width:560px;background:#fff;border:4px solid var(--navy);border-radius:28px;padding:26px;text-align:center}
+.qrbox img{width:500px;height:500px;display:block}
+.qlink{text-align:center;font-family:BC;font-weight:600;font-size:34px;color:var(--navy);margin-top:24px;letter-spacing:.5px}
+.qhint{text-align:center;font-family:BC,MJ;font-size:32px;color:var(--grey);margin-top:14px;line-height:1.4}
+body.tall .qrbox{width:760px;margin-top:70px}
+body.tall .qrbox img{width:700px;height:700px}
+body.tall .qlink{font-size:40px;margin-top:34px}
+body.tall .qhint{font-size:38px}
+"""
+QR = ('<div class="head"><h2>സ്കാൻ ചെയ്ത് ഗ്രൂപ്പിൽ ചേരൂ</h2><p>നാട്ടിലെ വാർത്തകൾ ഞങ്ങൾക്ക് അയക്കൂ</p></div>'
+      '<div class="qrbox"><img src="../assets/qr/whatsapp-group.png"></div>'
+      f'<div class="qlink">{LINK}</div>'
+      '<div class="qhint">ഫോണിലെ ക്യാമറ കൊണ്ട് QR code സ്കാൻ ചെയ്യൂ</div>')
+POSTERS['wa5-join-qr'] = QR
+
 out = pathlib.Path(sys.argv[1]).resolve(); out.mkdir(parents=True, exist_ok=True)
-jobs = [(k, v, 1350, '') for k, v in POSTERS.items()] + [('wa1-invite-status', INVITE, 1920, 'tall')]
+jobs = [(k, v, 1350, '') for k, v in POSTERS.items()] + [('wa1-invite-status', INVITE, 1920, 'tall'), ('wa5-join-qr-status', QR, 1920, 'tall')]
 for name, body, h, cls in jobs:
     html = (f'<!DOCTYPE html><html lang="ml"><head><meta charset="utf-8"><style>{CSS}</style></head>'
             f'<body class="{cls}">{PAPER}<div class="wrap"><span class="date">WhatsApp കൂട്ടായ്മ</span>{body}</div>{FOOT}</body></html>')
