@@ -60,7 +60,7 @@ for o, (W, H) in {'v': (1080, 1920), 'h': (1920, 1080)}.items():
     shot(f'{o}_head1', W, H, f'''<div style="position:absolute;left:{56 if v else 120}px;right:{56 if v else 120}px;top:{620 if v else 250}px">
 <div style="display:inline-block;background:{BLUE};font:700 {40 if v else 38}px/1 MJ;padding:18px 28px 10px">പ്രധാന വാർത്ത</div>
 <div class="sh" style="background:{NAVY};border-left:16px solid {BLUE};padding:34px 44px 22px;font:700 {96 if v else 104}px/1.25 MJ">{H1}</div></div>''')
-    shot(f'{o}_head2', W, H, f'''<div style="position:absolute;left:{56 if v else 120}px;right:{56 if v else 120}px;top:{880 if v else 520}px">
+    shot(f'{o}_head2', W, H, f'''<div style="position:absolute;left:{56 if v else 120}px;right:{56 if v else 120}px;top:{1010 if v else 520}px">
 <div class="sh" style="display:inline-block;background:#fff;color:{NAVY};border-left:16px solid {GREY};padding:24px 36px 14px;font:700 {50 if v else 52}px/1.35 MJ">{H2}</div></div>''')
     for k, t in CAPS.items():
         shot(f'{o}_cap_{k}', W, 340 if v else 230, f'<div class="ts" style="position:absolute;left:{40 if v else 48}px;right:{40 if v else 520}px;bottom:0"><div class="cap sh">{t}</div></div>')
