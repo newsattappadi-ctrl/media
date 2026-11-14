@@ -64,7 +64,7 @@ for o, (W, H) in {'v': (1080, 1920), 'h': (1920, 1080)}.items():
     strap = (f'<div class="strap sh" style="position:absolute;left:{0 if v else 48}px;right:{0 if v else 48}px;bottom:{sb}px">'
              f'<div class="k">{STRAP_K}</div><div class="t" style="{"font-size:38px" if v else ""}">{STRAP_T}</div></div>')
     for kind, note in (('top', CREDIT), ('map', 'Map: Esri, Maxar · ഏകദേശ സ്ഥാനം')):
-        meta = (f'<div class="ts" style="position:absolute;{"left:56px;top:178px" if v else "right:48px;top:44px"};font:700 26px/1.2 MJ;opacity:.95">{note}</div>'
+        meta = (f'<div class="ts" style="position:absolute;{"left:56px;top:178px" if v else "right:48px;top:44px"};font:700 26px/1.2 BC,MJ;opacity:.95">{note}</div>'
                 f'<div class="ts" style="position:absolute;{"right:56px;top:96px" if v else "right:48px;top:84px"};font:700 30px/1 BC">@newsattappadi</div>')
         shot(f'{o}_{kind}', W, H, grad + bug + meta + strap)
     # opening headline card (full frame, slides in)
