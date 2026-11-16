@@ -1,56 +1,12 @@
-query ok s2_myristica_fragrans_fruit_tree
-query ok s2_nutmeg_mace_aril_fruit
-query ok s2_theobroma_cacao_pods_tree_india
-query ok s2_cocoa_pods_kerala
-query ok s2_piper_nigrum_fruits_vine
-query ok s2_pepper_plantation_kerala
-query ok s2_elettaria_cardamomum_capsules_plant
-query ok s2_coffee_plantation_wayanad
-query ok s2_rain_kerala_monsoon_road
-query ok s2_palakkad_hills_clouds
-query ok s2_paddy_field_palakkad_hills
-query ok s2_bhavani_river_attappadi
-query ok s2_siruvani
-query ok s2_mukkali_attappadi
-query ok s2_anakkatti_kerala
-query ok s2_wild_elephant_kerala_forest
-query ok s2_attappadi_tribal_hamlet
-query ok s2_sholayur_attappadi_hills
-download ok hills_1.jpg 1600x900
-download ok hills_2.jpg 1600x900
-download ok hills_mist_1.jpg 1600x900
-download ok hills_mist_2.jpg 1600x900
-download ok hills_mist_3.jpg 1600x900
-download ok viewpoint_1.jpg 1600x900
-download ok viewpoint_2.jpg 1600x900
-download ok viewpoint_3.jpg 1600x900
-download ok hairpin.jpg 1600x900
-download ok malleeswaran.jpg 1600x1200
-download ok view_1.jpg 1600x900
-download ok view_2.jpg 1600x900
-download ok view_3.jpg 1600x900
-download ok view_4.jpg 1600x900
-download ok narasimukk.jpg 1600x900
-download ok bhavani_thavalam.jpg 1600x1041
-download ok forest_stream.jpg 1600x1067
-download ok foggy_route.jpg 1600x1200
-download ok jowar.jpg 1600x800
-download ok ragi.jpg 1600x1200
-download ok peafowl.jpg 1600x817
-download ok sv_evergreen.jpg 1600x1067
-download ok sv_shola.jpg 1600x1067
-download ok sv_karuvara.jpg 1600x1066
-download ok sv_tower_view.jpg 1600x669
-download ok sv_bridge.jpg 1600x1064
-download ok school_agali.jpg 1600x703
-download ok school_sholayur.jpg 1600x703
-download ok cardamom_terraces.jpg 1600x1064
-download ok cardamom_flower.jpg 1600x1067
-download ok pepper_drying.jpg 1600x1067
-download ok coffee_fruit.jpg 1600x1200
-download ok coffee_robusta.jpg 1600x1200
-download ok coffee_plant.jpg 1600x1200
-download ok clove_tree.jpg 1600x1200
-download ok clove_buds.jpg 1600x1200
-download ok monsoon_clouds.jpg 1600x1079
-download ok cloud_canopy.jpg 1600x1200
+download ok cocoa_pods.jpg 1600x1063
+download ok cocoa_roadside.jpg 1600x900
+download ok cardamom_plant.jpg 1600x900
+download ok cardamom_capsules.jpg 1600x1174
+download ok nutmeg_mace.jpg 1600x1200
+download ok nutmeg_aril.jpg 1600x1037
+download ok mace.jpg 1600x1013
+download ok pepper_vine.jpg 1600x1200
+download ok pepper_support.jpg 1600x1200
+download ok coffee_wayanad.jpg 1600x1067
+download ok siruvani_river.jpg 1600x758
+download ok elephant.jpg 1600x1000
