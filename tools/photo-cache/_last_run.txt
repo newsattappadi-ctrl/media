@@ -1,12 +1,1 @@
-download ok cocoa_pods.jpg 1600x1063
-download ok cocoa_roadside.jpg 1600x900
-download ok cardamom_plant.jpg 1600x900
-download ok cardamom_capsules.jpg 1600x1174
-download ok nutmeg_mace.jpg 1600x1200
-download ok nutmeg_aril.jpg 1600x1037
-download ok mace.jpg 1600x1013
-download ok pepper_vine.jpg 1600x1200
-download ok pepper_support.jpg 1600x1200
-download ok coffee_wayanad.jpg 1600x1067
-download ok siruvani_river.jpg 1600x758
-download ok elephant.jpg 1600x1000
+
