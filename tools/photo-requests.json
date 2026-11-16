@@ -1,0 +1,113 @@
+{
+ "queries": [
+  {
+   "out": "cat_attappadi",
+   "url": "https://commons.wikimedia.org/w/api.php?action=query&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize%7Cmime&iiextmetadatafilter=LicenseShortName%7CArtist%7CImageDescription%7CCredit&iiurlwidth=1600&format=json&generator=categorymembers&gcmtitle=Category%3AAttappadi&gcmtype=file&gcmlimit=80"
+  },
+  {
+   "out": "cat_attappadi_reserve_forest",
+   "url": "https://commons.wikimedia.org/w/api.php?action=query&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize%7Cmime&iiextmetadatafilter=LicenseShortName%7CArtist%7CImageDescription%7CCredit&iiurlwidth=1600&format=json&generator=categorymembers&gcmtitle=Category%3AAttappadi+Reserve+Forest&gcmtype=file&gcmlimit=80"
+  },
+  {
+   "out": "cat_silent_valley_national_park",
+   "url": "https://commons.wikimedia.org/w/api.php?action=query&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize%7Cmime&iiextmetadatafilter=LicenseShortName%7CArtist%7CImageDescription%7CCredit&iiurlwidth=1600&format=json&generator=categorymembers&gcmtitle=Category%3ASilent+Valley+National+Park&gcmtype=file&gcmlimit=80"
+  },
+  {
+   "out": "cat_agali",
+   "url": "https://commons.wikimedia.org/w/api.php?action=query&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize%7Cmime&iiextmetadatafilter=LicenseShortName%7CArtist%7CImageDescription%7CCredit&iiurlwidth=1600&format=json&generator=categorymembers&gcmtitle=Category%3AAgali&gcmtype=file&gcmlimit=80"
+  },
+  {
+   "out": "cat_mannarkkad",
+   "url": "https://commons.wikimedia.org/w/api.php?action=query&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize%7Cmime&iiextmetadatafilter=LicenseShortName%7CArtist%7CImageDescription%7CCredit&iiurlwidth=1600&format=json&generator=categorymembers&gcmtitle=Category%3AMannarkkad&gcmtype=file&gcmlimit=80"
+  },
+  {
+   "out": "cat_siruvani",
+   "url": "https://commons.wikimedia.org/w/api.php?action=query&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize%7Cmime&iiextmetadatafilter=LicenseShortName%7CArtist%7CImageDescription%7CCredit&iiurlwidth=1600&format=json&generator=categorymembers&gcmtitle=Category%3ASiruvani&gcmtype=file&gcmlimit=80"
+  },
+  {
+   "out": "cat_monsoon_in_kerala",
+   "url": "https://commons.wikimedia.org/w/api.php?action=query&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize%7Cmime&iiextmetadatafilter=LicenseShortName%7CArtist%7CImageDescription%7CCredit&iiurlwidth=1600&format=json&generator=categorymembers&gcmtitle=Category%3AMonsoon+in+Kerala&gcmtype=file&gcmlimit=80"
+  },
+  {
+   "out": "cat_cardamom_plantations_in_kerala",
+   "url": "https://commons.wikimedia.org/w/api.php?action=query&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize%7Cmime&iiextmetadatafilter=LicenseShortName%7CArtist%7CImageDescription%7CCredit&iiurlwidth=1600&format=json&generator=categorymembers&gcmtitle=Category%3ACardamom+plantations+in+Kerala&gcmtype=file&gcmlimit=80"
+  },
+  {
+   "out": "cat_piper_nigrum_in_kerala",
+   "url": "https://commons.wikimedia.org/w/api.php?action=query&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize%7Cmime&iiextmetadatafilter=LicenseShortName%7CArtist%7CImageDescription%7CCredit&iiurlwidth=1600&format=json&generator=categorymembers&gcmtitle=Category%3APiper+nigrum+in+Kerala&gcmtype=file&gcmlimit=80"
+  },
+  {
+   "out": "cat_coffee_plantations_in_kerala",
+   "url": "https://commons.wikimedia.org/w/api.php?action=query&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize%7Cmime&iiextmetadatafilter=LicenseShortName%7CArtist%7CImageDescription%7CCredit&iiurlwidth=1600&format=json&generator=categorymembers&gcmtitle=Category%3ACoffee+plantations+in+Kerala&gcmtype=file&gcmlimit=80"
+  },
+  {
+   "out": "s_attappadi",
+   "url": "https://commons.wikimedia.org/w/api.php?action=query&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize%7Cmime&iiextmetadatafilter=LicenseShortName%7CArtist%7CImageDescription%7CCredit&iiurlwidth=1600&format=json&generator=search&gsrsearch=Attappadi+filetype%3Abitmap&gsrnamespace=6&gsrlimit=40"
+  },
+  {
+   "out": "s_attappady",
+   "url": "https://commons.wikimedia.org/w/api.php?action=query&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize%7Cmime&iiextmetadatafilter=LicenseShortName%7CArtist%7CImageDescription%7CCredit&iiurlwidth=1600&format=json&generator=search&gsrsearch=Attappady+filetype%3Abitmap&gsrnamespace=6&gsrlimit=40"
+  },
+  {
+   "out": "s_agali_palakkad",
+   "url": "https://commons.wikimedia.org/w/api.php?action=query&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize%7Cmime&iiextmetadatafilter=LicenseShortName%7CArtist%7CImageDescription%7CCredit&iiurlwidth=1600&format=json&generator=search&gsrsearch=Agali+Palakkad+filetype%3Abitmap&gsrnamespace=6&gsrlimit=40"
+  },
+  {
+   "out": "s_sholayur",
+   "url": "https://commons.wikimedia.org/w/api.php?action=query&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize%7Cmime&iiextmetadatafilter=LicenseShortName%7CArtist%7CImageDescription%7CCredit&iiurlwidth=1600&format=json&generator=search&gsrsearch=Sholayur+filetype%3Abitmap&gsrnamespace=6&gsrlimit=40"
+  },
+  {
+   "out": "s_malleswaram_peak_attappadi",
+   "url": "https://commons.wikimedia.org/w/api.php?action=query&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize%7Cmime&iiextmetadatafilter=LicenseShortName%7CArtist%7CImageDescription%7CCredit&iiurlwidth=1600&format=json&generator=search&gsrsearch=Malleswaram+peak+Attappadi+filetype%3Abitmap&gsrnamespace=6&gsrlimit=40"
+  },
+  {
+   "out": "s_bhavani_river_kerala",
+   "url": "https://commons.wikimedia.org/w/api.php?action=query&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize%7Cmime&iiextmetadatafilter=LicenseShortName%7CArtist%7CImageDescription%7CCredit&iiurlwidth=1600&format=json&generator=search&gsrsearch=Bhavani+river+Kerala+filetype%3Abitmap&gsrnamespace=6&gsrlimit=40"
+  },
+  {
+   "out": "s_cardamom_plant_kerala",
+   "url": "https://commons.wikimedia.org/w/api.php?action=query&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize%7Cmime&iiextmetadatafilter=LicenseShortName%7CArtist%7CImageDescription%7CCredit&iiurlwidth=1600&format=json&generator=search&gsrsearch=cardamom+plant+Kerala+filetype%3Abitmap&gsrnamespace=6&gsrlimit=40"
+  },
+  {
+   "out": "s_black_pepper_vine_kerala",
+   "url": "https://commons.wikimedia.org/w/api.php?action=query&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize%7Cmime&iiextmetadatafilter=LicenseShortName%7CArtist%7CImageDescription%7CCredit&iiurlwidth=1600&format=json&generator=search&gsrsearch=black+pepper+vine+Kerala+filetype%3Abitmap&gsrnamespace=6&gsrlimit=40"
+  },
+  {
+   "out": "s_coffee_berries_kerala",
+   "url": "https://commons.wikimedia.org/w/api.php?action=query&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize%7Cmime&iiextmetadatafilter=LicenseShortName%7CArtist%7CImageDescription%7CCredit&iiurlwidth=1600&format=json&generator=search&gsrsearch=coffee+berries+Kerala+filetype%3Abitmap&gsrnamespace=6&gsrlimit=40"
+  },
+  {
+   "out": "s_nutmeg_fruit_tree_kerala",
+   "url": "https://commons.wikimedia.org/w/api.php?action=query&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize%7Cmime&iiextmetadatafilter=LicenseShortName%7CArtist%7CImageDescription%7CCredit&iiurlwidth=1600&format=json&generator=search&gsrsearch=nutmeg+fruit+tree+Kerala+filetype%3Abitmap&gsrnamespace=6&gsrlimit=40"
+  },
+  {
+   "out": "s_nutmeg_mace_fresh",
+   "url": "https://commons.wikimedia.org/w/api.php?action=query&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize%7Cmime&iiextmetadatafilter=LicenseShortName%7CArtist%7CImageDescription%7CCredit&iiurlwidth=1600&format=json&generator=search&gsrsearch=nutmeg+mace+fresh+filetype%3Abitmap&gsrnamespace=6&gsrlimit=40"
+  },
+  {
+   "out": "s_clove_buds_tree",
+   "url": "https://commons.wikimedia.org/w/api.php?action=query&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize%7Cmime&iiextmetadatafilter=LicenseShortName%7CArtist%7CImageDescription%7CCredit&iiurlwidth=1600&format=json&generator=search&gsrsearch=clove+buds+tree+filetype%3Abitmap&gsrnamespace=6&gsrlimit=40"
+  },
+  {
+   "out": "s_cocoa_pods_tree_kerala",
+   "url": "https://commons.wikimedia.org/w/api.php?action=query&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize%7Cmime&iiextmetadatafilter=LicenseShortName%7CArtist%7CImageDescription%7CCredit&iiurlwidth=1600&format=json&generator=search&gsrsearch=cocoa+pods+tree+Kerala+filetype%3Abitmap&gsrnamespace=6&gsrlimit=40"
+  },
+  {
+   "out": "s_rain_kerala_hills",
+   "url": "https://commons.wikimedia.org/w/api.php?action=query&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize%7Cmime&iiextmetadatafilter=LicenseShortName%7CArtist%7CImageDescription%7CCredit&iiurlwidth=1600&format=json&generator=search&gsrsearch=rain+Kerala+hills+filetype%3Abitmap&gsrnamespace=6&gsrlimit=40"
+  },
+  {
+   "out": "s_mist_western_ghats_palakkad",
+   "url": "https://commons.wikimedia.org/w/api.php?action=query&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize%7Cmime&iiextmetadatafilter=LicenseShortName%7CArtist%7CImageDescription%7CCredit&iiurlwidth=1600&format=json&generator=search&gsrsearch=mist+Western+Ghats+Palakkad+filetype%3Abitmap&gsrnamespace=6&gsrlimit=40"
+  },
+  {
+   "out": "s_millet_field_kerala",
+   "url": "https://commons.wikimedia.org/w/api.php?action=query&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize%7Cmime&iiextmetadatafilter=LicenseShortName%7CArtist%7CImageDescription%7CCredit&iiurlwidth=1600&format=json&generator=search&gsrsearch=millet+field+Kerala+filetype%3Abitmap&gsrnamespace=6&gsrlimit=40"
+  },
+  {
+   "out": "s_elephant_silent_valley_kerala",
+   "url": "https://commons.wikimedia.org/w/api.php?action=query&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize%7Cmime&iiextmetadatafilter=LicenseShortName%7CArtist%7CImageDescription%7CCredit&iiurlwidth=1600&format=json&generator=search&gsrsearch=elephant+Silent+Valley+Kerala+filetype%3Abitmap&gsrnamespace=6&gsrlimit=40"
+  }
+ ],
+ "downloads": []
+}

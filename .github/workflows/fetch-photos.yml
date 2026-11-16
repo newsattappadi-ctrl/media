@@ -1,0 +1,26 @@
+name: Fetch photos
+# Downloads free-licence photos listed in tools/photo-requests.json into assets/library/
+# and saves Wikimedia Commons search results into tools/photo-cache/.
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['tools/photo-requests.json']
+permissions:
+  contents: write
+concurrency: fetch-photos
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: pip install --quiet pillow
+      - run: python3 tools/fetch_photos.py
+      - name: Commit results
+        run: |
+          git config user.name "news-attappadi-bot"
+          git config user.email "newsattappadi@gmail.com"
+          git add assets/library tools/photo-cache
+          git diff --cached --quiet || git commit -m "Photo fetch: update library and search cache"
+          git pull --rebase origin main
+          git push origin HEAD:main
