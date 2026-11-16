@@ -1,5 +1,5 @@
 {
-  "note": "Free-licence photos from Wikimedia Commons. Always show the credit on the slide and in the caption.",
+  "note": "Free-licence photos. Always show the credit on the slide and in the caption. Entries marked '(not Attappadi)' are illustrative only: use them for spice/price or generic weather posts with the tag 'പ്രതീകാത്മക ചിത്രം', never as a photo of Attappadi. New photos are fetched through tools/photo-requests.json (GitHub Actions workflow 'Fetch photos').",
   "pepper.jpg": {
     "shows": "Black pepper vine on a tree, Kerala",
     "credit": "Varghese K James / Wikimedia Commons (CC BY 4.0)",
@@ -49,5 +49,155 @@
     "shows": "Official poster of 'Attappadi - The Valley of Divine Healing' with director Vijeesh Mani",
     "credit": "Vijeesh Mani Film Club",
     "source": "Image supplied by the page owner on 14 Nov 2026; he states he has permission. Use only for this film's news."
+  },
+  "hills_1.jpg": {
+    "shows": "Attappadi hills",
+    "credit": "Ramesh Kunnappully / Wikimedia Commons (CC BY-SA 4.0)",
+    "source": "https://commons.wikimedia.org/wiki/File:Attapadi_Hills.jpg"
+  },
+  "hills_2.jpg": {
+    "shows": "Attappadi hills seen from the Agali-Mundanpara road",
+    "credit": "Ramesh Kunnappully / Wikimedia Commons (CC BY-SA 4.0)",
+    "source": "https://commons.wikimedia.org/wiki/File:Attappadi_Hills.jpg"
+  },
+  "hills_mist_1.jpg": {
+    "shows": "Attappadi hills in mist",
+    "credit": "Ramesh Kunnappully / Wikimedia Commons (CC BY-SA 4.0)",
+    "source": "https://commons.wikimedia.org/wiki/File:Attappadi_Hills_Mist_01.jpg"
+  },
+  "hills_mist_2.jpg": {
+    "shows": "Attappadi hills in mist",
+    "credit": "Ramesh Kunnappully / Wikimedia Commons (CC BY-SA 4.0)",
+    "source": "https://commons.wikimedia.org/wiki/File:Attappadi_Hills_Mist_02.jpg"
+  },
+  "hills_mist_3.jpg": {
+    "shows": "Attappadi hills in mist",
+    "credit": "Ramesh Kunnappully / Wikimedia Commons (CC BY-SA 4.0)",
+    "source": "https://commons.wikimedia.org/wiki/File:Attappadi_Hills_Mist_03.jpg"
+  },
+  "viewpoint_1.jpg": {
+    "shows": "View from the Mannarkkad-Attappadi road view point",
+    "credit": "Ramesh Kunnappully / Wikimedia Commons (CC BY-SA 4.0)",
+    "source": "https://commons.wikimedia.org/wiki/File:Mannarkkad-Attapadi_Road_View_Point.jpg"
+  },
+  "viewpoint_2.jpg": {
+    "shows": "View from the Mannarkkad-Attappadi road view point",
+    "credit": "Ramesh Kunnappully / Wikimedia Commons (CC BY-SA 4.0)",
+    "source": "https://commons.wikimedia.org/wiki/File:Mannarkkad-Attapadi_Road_View_Point_2.jpg"
+  },
+  "viewpoint_3.jpg": {
+    "shows": "View from the Mannarkkad-Attappadi road view point",
+    "credit": "Ramesh Kunnappully / Wikimedia Commons (CC BY-SA 4.0)",
+    "source": "https://commons.wikimedia.org/wiki/File:Mannarkkad-Attapadi_Road_View_Point_3.jpg"
+  },
+  "hairpin.jpg": {
+    "shows": "Hair-pin bend on the Mannarkkad-Attappadi ghat road",
+    "credit": "Ramesh Kunnappully / Wikimedia Commons (CC BY-SA 4.0)",
+    "source": "https://commons.wikimedia.org/wiki/File:Mannarkkad-Attappadi_road_hair-pin_bend.jpg"
+  },
+  "malleeswaran.jpg": {
+    "shows": "Malleeswaran Mudi peak seen from Attappadi",
+    "credit": "Lallji / Wikimedia Commons (CC BY-SA 3.0)",
+    "source": "https://commons.wikimedia.org/wiki/File:Malleeswaran_Mudi.JPG"
+  },
+  "view_1.jpg": {
+    "shows": "Donkeys grazing on a hilltop, view of Attappadi",
+    "credit": "Nativeplants garden / Wikimedia Commons (CC BY-SA 3.0)",
+    "source": "https://commons.wikimedia.org/wiki/File:View_of_Attappadi.jpg"
+  },
+  "view_2.jpg": {
+    "shows": "Hilltop view of Attappadi valley",
+    "credit": "Nativeplants garden / Wikimedia Commons (CC BY-SA 3.0)",
+    "source": "https://commons.wikimedia.org/wiki/File:View_of_Attappadi_(15246).jpg"
+  },
+  "narasimukk.jpg": {
+    "shows": "Narasimukk, Attappadi",
+    "credit": "Nativeplants garden / Wikimedia Commons (CC BY-SA 3.0)",
+    "source": "https://commons.wikimedia.org/wiki/File:Narasimukk,_Attappadi.jpg"
+  },
+  "bhavani_thavalam.jpg": {
+    "shows": "Bhavani river near Manchikkandi / Thavalam, Attappadi",
+    "credit": "Snkanak / Wikimedia Commons (CC BY-SA 4.0)",
+    "source": "https://commons.wikimedia.org/wiki/File:Attappadi.jpg"
+  },
+  "forest_stream.jpg": {
+    "shows": "Forest stream in Attappadi",
+    "credit": "Abidkp.pmna / Wikimedia Commons (CC BY-SA 4.0)",
+    "source": "https://commons.wikimedia.org/wiki/File:Hidden_bueaty_of_nature.jpg"
+  },
+  "foggy_route.jpg": {
+    "shows": "Foggy road from Mannarkkad towards Attappadi",
+    "credit": "Lallji / Wikimedia Commons (CC BY-SA 3.0)",
+    "source": "https://commons.wikimedia.org/wiki/File:Route_to_Attappady.JPG"
+  },
+  "jowar.jpg": {
+    "shows": "Jowar (cholam) field, Attappadi",
+    "credit": "Sureshpadmanabha / Wikimedia Commons (CC BY-SA 4.0)",
+    "source": "https://commons.wikimedia.org/wiki/File:Jowar_field.jpg"
+  },
+  "ragi.jpg": {
+    "shows": "Flowering ragi plants, Gottiyarkandy ooru, Attappadi",
+    "credit": "Sureshpadmanabha / Wikimedia Commons (CC BY-SA 4.0)",
+    "source": "https://commons.wikimedia.org/wiki/File:Ragi_Plant.jpg"
+  },
+  "sv_evergreen.jpg": {
+    "shows": "Evergreen forest, Silent Valley National Park",
+    "credit": "Davidvraju / Wikimedia Commons (CC0)",
+    "source": "https://commons.wikimedia.org/wiki/File:Evergreen_forest_of_Silent_Valley_Np_Kerala.jpg"
+  },
+  "sv_shola.jpg": {
+    "shows": "Shola forest, Silent Valley National Park",
+    "credit": "Davidvraju / Wikimedia Commons (CC0)",
+    "source": "https://commons.wikimedia.org/wiki/File:Shola_Forest_Silent_valley_NP_(1).jpg"
+  },
+  "sv_karuvara.jpg": {
+    "shows": "Karuvara waterfall, Silent Valley buffer zone",
+    "credit": "നിരക്ഷരൻ / Wikimedia Commons (CC BY-SA 3.0)",
+    "source": "https://commons.wikimedia.org/wiki/File:Karuvara_water_fall_-_silent_valley.jpg"
+  },
+  "sv_tower_view.jpg": {
+    "shows": "View from the watch tower, Silent Valley",
+    "credit": "Lakshmi Poola / Wikimedia Commons (CC BY-SA 4.0)",
+    "source": "https://commons.wikimedia.org/wiki/File:Silent_valley.jpg"
+  },
+  "sv_bridge.jpg": {
+    "shows": "Bridge at Sairandhri, Silent Valley National Park",
+    "credit": "Cj.samson / Wikimedia Commons (CC BY-SA 3.0)",
+    "source": "https://commons.wikimedia.org/wiki/File:Silentvalley_bridge.JPG"
+  },
+  "school_agali.jpg": {
+    "shows": "GVHSS Agali school building",
+    "credit": "Sareeshattappadi / Wikimedia Commons (CC BY 4.0)",
+    "source": "https://commons.wikimedia.org/wiki/File:21089_GVHSS_AGALI_HS_BUILDING_IMG_20251004_100419.jpg"
+  },
+  "school_sholayur.jpg": {
+    "shows": "GTHS Sholayur school",
+    "credit": "Sareeshattappady / Wikimedia Commons (CC BY-SA 4.0)",
+    "source": "https://commons.wikimedia.org/wiki/File:21103_GTHS_sholayur_01.jpg"
+  },
+  "cardamom_flower.jpg": {
+    "shows": "Flower of the cardamom plant (not Attappadi)",
+    "credit": "Reji Jacob / Wikimedia Commons (CC0)",
+    "source": "https://commons.wikimedia.org/wiki/File:Flower_of_cardamom.jpg"
+  },
+  "pepper_drying.jpg": {
+    "shows": "Black pepper drying, Munnar hills (not Attappadi)",
+    "credit": "Rainer Halama / Wikimedia Commons (CC BY-SA 4.0)",
+    "source": "https://commons.wikimedia.org/wiki/File:Pepper_drying_in_Munnar_Hills-WUS07148.jpg"
+  },
+  "coffee_fruit.jpg": {
+    "shows": "Coffee fruit, Wayanad, Kerala (not Attappadi)",
+    "credit": "Satheesan.vn / Wikimedia Commons (CC BY-SA 3.0)",
+    "source": "https://commons.wikimedia.org/wiki/File:Coffea_arabica-_fruit11.JPG"
+  },
+  "coffee_robusta.jpg": {
+    "shows": "Coffee flowers, Kerala (not Attappadi)",
+    "credit": "Jeevan Jose, Kerala, India / Wikimedia Commons (CC BY-SA 4.0)",
+    "source": "https://commons.wikimedia.org/wiki/File:Coffea.jpg"
+  },
+  "monsoon_clouds.jpg": {
+    "shows": "Monsoon clouds over the Western Ghats, Kerala (not Attappadi)",
+    "credit": "Nagesh Jayaraman / Wikimedia Commons (CC BY 2.0)",
+    "source": "https://commons.wikimedia.org/wiki/File:Kerala_Monsoon_clouds_over_Western_Ghats_India.jpg"
   }
 }
