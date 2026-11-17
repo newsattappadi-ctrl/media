@@ -1,1 +1,4 @@
-
+query ok ayyappa1
+query ok ayyappa2
+query ok ayyappa3
+query ok ayyappa4
