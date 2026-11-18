@@ -1,3 +1,1 @@
-query ok karthumbi
-query ok umbrella_kerala
-query ok attappadi_tribal
+download ok karthumbi_launch.jpg 1600x1063
