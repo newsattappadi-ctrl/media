@@ -1,1 +1,3 @@
-
+query ok karthumbi
+query ok umbrella_kerala
+query ok attappadi_tribal
