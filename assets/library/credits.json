@@ -1,5 +1,5 @@
 {
- "note": "Free-licence photos. Always show the credit on the slide and in the caption. Entries marked '(not Attappadi)' are illustrative only: use them for spice/price or generic weather posts with the tag 'പ്രതീകാത്മക ചിത്രം', never as a photo of Attappadi. New photos are fetched through tools/photo-requests.json (GitHub Actions workflow 'Fetch photos').",
+ "note": "Free-licence photos. Always show the credit on the slide and in the caption. Entries marked '(not Attappadi)' are illustrative only: use them for spice/price or generic weather posts with the tag 'പ്രതീകാത്മക ചിത്രം', never as a photo of Attappadi. New photos are fetched through tools/photo-requests.json (GitHub Actions workflow 'Fetch photos'). RULE (page owner): a photo used once in any post (tools/content/*.json or greetings) must never be used again; fetch a new fitting photo instead.",
  "pepper.jpg": {
   "shows": "Black pepper vine on a tree, Kerala",
   "credit": "Varghese K James / Wikimedia Commons (CC BY 4.0)",
@@ -246,7 +246,7 @@
   "source": "https://commons.wikimedia.org/wiki/File:Elephant_wild_Elephant_02.jpg"
  },
  "ayyappa_idol_sabarimala.jpg": {
-  "shows": "Idol of Lord Ayyappa in a hall at Sabarimala (not Attappadi). Used for the Mandalam greeting 2026.",
+  "shows": "Idol of Lord Ayyappa in a hall at Sabarimala (not Attappadi). Only for the Mandalam greeting 2026-11-17; already used, do not use again.",
   "credit": "Chinnareddy435 / Wikimedia Commons (CC BY 4.0)",
   "source": "https://commons.wikimedia.org/wiki/File:Idol_of_Lord_Ayyappa_in_a_Hall_at_Sabarimala.jpg"
  }
