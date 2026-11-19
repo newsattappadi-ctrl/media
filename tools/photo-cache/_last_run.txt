@@ -1,8 +1,26 @@
-query ok ep1_titles
-query ok ep1_teak
-query ok ep1_malabar_map
-query ok ep1_kalam
-query ok ep1_timber
-query ok ep1_sleeper
-query ok ep1_irula
-query ok ep1_attappadi_dry
+download ok s_hills5.jpg 640x480
+download ok s_tribal_area.jpg 1145x540
+download ok s_scenery_b.jpg 1280x857
+download ok s_irulas1871.jpg 1331x1600
+download ok s_landscape_c.jpg 1600x720
+download ok s_landscape_d.jpg 1600x720
+download ok s_tribal_rhythms.jpg 1600x1163
+download ok s_tribal_deities.jpg 736x567
+download ok s_teak_nilambur.jpg 1600x1030
+download ok s_malabar_1744.jpg 800x600
+download ok s_kalam.jpg 1280x1600
+download ok s_irula_men.jpg 1228x1600
+download ok s_irula_women.jpg 1228x1600
+skip s_irulas1871.jpg
+file ok ep1_s0.wav
+file ok ep1_s1.wav
+file ok ep1_s2.wav
+file ok ep1_s3.wav
+file ok ep1_s4.wav
+file ok ep1_s5.wav
+file ok ep1_s6.wav
+file ok ep1_s7.wav
+file ok ep1_s8.wav
+file ok ep1_s9.wav
+file ok ep1_s10.wav
+file ok ep1_s11.wav
