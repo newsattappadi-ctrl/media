@@ -1,49 +1,65 @@
 {
- "queries": [
+ "queries": [],
+ "downloads": [
   {
-   "out": "v_attappadi_video",
-   "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=filetype%3Avideo+Attappadi&gsrnamespace=6&gsrlimit=30&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize%7Cmime&iiurlwidth=1600&format=json"
+   "file": "v_thachampara.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/7/75/Thachampara_town.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
   },
   {
-   "out": "v_attappady_video",
-   "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=filetype%3Avideo+Attappady&gsrnamespace=6&gsrlimit=30&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize%7Cmime&iiurlwidth=1600&format=json"
+   "file": "v_festival.jpg",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/Attappadi_festival.jpg/1920px-Attappadi_festival.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
   },
   {
-   "out": "v_palakkad_video",
-   "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=filetype%3Avideo+Palakkad+hills+road&gsrnamespace=6&gsrlimit=30&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize%7Cmime&iiurlwidth=1600&format=json"
+   "file": "v_ghat_e.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Attappadi_ghat_road.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
   },
   {
-   "out": "v_silentvalley_video",
-   "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=filetype%3Avideo+Silent+Valley+Kerala&gsrnamespace=6&gsrlimit=30&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize%7Cmime&iiurlwidth=1600&format=json"
+   "file": "v_ghat_a.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Attappadi_ghat_road_%2829728%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
   },
   {
-   "out": "i_attappadi_ghat",
-   "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=filetype%3Abitmap+Attappadi+ghat+road&gsrnamespace=6&gsrlimit=30&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize%7Cmime&iiurlwidth=1600&format=json"
+   "file": "v_ghat_d.jpg",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/Attappadi_ghat_road_%2834022%29.jpg/1920px-Attappadi_ghat_road_%2834022%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
   },
   {
-   "out": "i_attappady_all",
-   "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=filetype%3Abitmap+Attappady&gsrnamespace=6&gsrlimit=30&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize%7Cmime&iiurlwidth=1600&format=json"
+   "file": "v_ghat_b.jpg",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/Attappadi_ghat_road_%2869557%29.jpg/1920px-Attappadi_ghat_road_%2869557%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
   },
   {
-   "out": "i_attappadi_all",
-   "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=filetype%3Abitmap+Attappadi&gsrnamespace=6&gsrlimit=30&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize%7Cmime&iiurlwidth=1600&format=json"
+   "file": "v_ghat_c.jpg",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Attappadi_ghat_road_%2892772%29.jpg/1920px-Attappadi_ghat_road_%2892772%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
   },
   {
-   "out": "i_agali",
-   "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=filetype%3Abitmap+Agali&gsrnamespace=6&gsrlimit=30&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize%7Cmime&iiurlwidth=1600&format=json"
+   "file": "v_view_b.jpg",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/View_of_Attappadi_%2870899%29.jpg/1920px-View_of_Attappadi_%2870899%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
   },
   {
-   "out": "i_mukkali",
-   "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=filetype%3Abitmap+Mukkali&gsrnamespace=6&gsrlimit=30&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize%7Cmime&iiurlwidth=1600&format=json"
+   "file": "v_view_a.jpg",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/View_of_Attappadi_%2872795%29.jpg/1920px-View_of_Attappadi_%2872795%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
   },
   {
-   "out": "i_anakatti",
-   "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=filetype%3Abitmap+Anakatti&gsrnamespace=6&gsrlimit=30&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize%7Cmime&iiurlwidth=1600&format=json"
+   "file": "v_mukkali_sv.jpg",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/Mukkali%2C_Silent_Valley.jpg/1920px-Mukkali%2C_Silent_Valley.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
   },
   {
-   "out": "i_mannarkkad_road",
-   "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=filetype%3Abitmap+Mannarkkad+road&gsrnamespace=6&gsrlimit=30&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize%7Cmime&iiurlwidth=1600&format=json"
+   "file": "v_mukkali_2025.jpg",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Mukkali_IMG_20250325_144414.jpg/1920px-Mukkali_IMG_20250325_144414.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+  },
+  {
+   "file": "v_hills_c.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/7/72/Attappady_Hills.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+  },
+  {
+   "file": "v_landscape_a.jpg",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Landscape_of_Attappady_-_image.jpg/1920px-Landscape_of_Attappady_-_image.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+  },
+  {
+   "file": "v_landscape_b.jpg",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/Landscape_of_Attappady_-photo.jpg/1920px-Landscape_of_Attappady_-photo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+  },
+  {
+   "file": "v_cowpea.jpg",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/Seeds_of_Cowpea_at_Attappady_in_Kerala.jpg/1920px-Seeds_of_Cowpea_at_Attappady_in_Kerala.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
   }
- ],
- "downloads": []
+ ]
 }
