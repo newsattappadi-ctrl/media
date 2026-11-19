@@ -1,3 +1,14 @@
-download ok baby_feet_1.jpg 1600x1235
-download ok baby_feet_2.jpg 1600x1065
-download ok baby_feet_3.jpg 1600x1199
+query ok x_newborn_hand_finger
+query ok x_baby_footprint
+query ok x_empty_cradle
+query ok x_mother_child_silhouette
+query ok x_pregnant_silhouette
+query ok x_empty_plate
+query ok x_ration_rice_india
+query ok x_rupee_notes
+query ok x_hospital_bed_empty
+query ok x_microphones_press
+query ok x_candle_vigil_hands
+query ok x_hands_holding_baby_feet
+query ok x_anganwadi
+query ok x_shadow_person_wall
