@@ -1,10 +1,11 @@
-download ok id_anganwadi.jpg 1600x900
-download ok id_shadow_wall.jpg 1115x1600
-download ok id_rupee_notes.jpg 1600x1200
-download ok id_press_mics.jpg 1600x1055
-download ok id_mother_doorway_silhouette.jpg 1064x1600
-download ok id_empty_plate.jpg 1600x898
-download ok id_pregnant_silhouette.jpg 1600x1060
-download ok id_feet_bed.jpg 1600x1067
-download ok id_hand_baby_feet.jpg 1600x1068
-download ok id_sole_fingers.jpg 1600x1067
+query ok v_attappadi_video
+query ok v_attappady_video
+query ok v_palakkad_video
+query ok v_silentvalley_video
+query ok i_attappadi_ghat
+query ok i_attappady_all
+query ok i_attappadi_all
+query ok i_agali
+query ok i_mukkali
+query ok i_anakatti
+query ok i_mannarkkad_road
