@@ -1,4 +1,3 @@
-query ok goat_attappadi
-query ok black_goat_kerala
-query ok attappadi_tribal
-query ok attappadi_all
+download ok attappadi_black_goat.jpg 1087x720
+download ok anavai_hanging_bridge.jpg 1145x540
+download ok tribal_rhythms.jpg 1600x1163
