@@ -1,1 +1,8 @@
-
+query ok ep1_titles
+query ok ep1_teak
+query ok ep1_malabar_map
+query ok ep1_kalam
+query ok ep1_timber
+query ok ep1_sleeper
+query ok ep1_irula
+query ok ep1_attappadi_dry
