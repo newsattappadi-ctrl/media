@@ -1,14 +1,10 @@
-query ok x_newborn_hand_finger
-query ok x_baby_footprint
-query ok x_empty_cradle
-query ok x_mother_child_silhouette
-query ok x_pregnant_silhouette
-query ok x_empty_plate
-query ok x_ration_rice_india
-query ok x_rupee_notes
-query ok x_hospital_bed_empty
-query ok x_microphones_press
-query ok x_candle_vigil_hands
-query ok x_hands_holding_baby_feet
-query ok x_anganwadi
-query ok x_shadow_person_wall
+download ok id_anganwadi.jpg 1600x900
+download ok id_shadow_wall.jpg 1115x1600
+download ok id_rupee_notes.jpg 1600x1200
+download ok id_press_mics.jpg 1600x1055
+download ok id_mother_doorway_silhouette.jpg 1064x1600
+download ok id_empty_plate.jpg 1600x898
+download ok id_pregnant_silhouette.jpg 1600x1060
+download ok id_feet_bed.jpg 1600x1067
+download ok id_hand_baby_feet.jpg 1600x1068
+download ok id_sole_fingers.jpg 1600x1067
