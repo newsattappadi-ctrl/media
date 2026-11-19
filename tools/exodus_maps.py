@@ -146,6 +146,24 @@ def frame(i):
             label(d, (x + 40 * S, y + 10 * S), 'പത്താം വളവ്: ചരക്കുവാഹന നിരോധനം', 32, (255, 210, 210), dot=False)
         title(d, 'ഏക വഴി: അട്ടപ്പാടി ചുരം', '25 വർഷമായി മാറ്റമില്ല')
         return img
+    if SCENE == 'bend':
+        z = ease(t / 1.6)
+        cam = Cam(lerp(76.56, 76.505, z), lerp(11.045, 11.038, z), lerp(0.42 if not V else 0.30, 0.09 if not V else 0.07, z))
+        img, d = base(cam)
+        pts = [cam.px(*P[n]) for n in CHURAM]
+        d.line(pts, fill=(255, 200, 60, 255), width=int(14 * S), joint='curve')
+        for n in ['ആനമൂളി', 'മന്ദംപൊട്ടി']: label(d, cam.px(*P[n]), n, 36, anchor='r')
+        x, y = cam.px(76.505, 11.038)
+        if t > 1.4:
+            ph = (t - 1.4) % 1.0
+            r = (30 + 90 * ph) * S
+            d.ellipse([x - r, y - r, x + r, y + r], outline=RED + (int(255 * (1 - ph)),), width=int(8 * S))
+            r2 = 34 * S
+            d.line([(x - r2, y - r2), (x + r2, y + r2)], fill=RED, width=int(14 * S)); d.line([(x - r2, y + r2), (x + r2, y - r2)], fill=RED, width=int(14 * S))
+        if t > 2.0: label(d, (x + 50 * S, y - 60 * S) if not V else (x - 330 * S, y + 120 * S), 'പത്താം വളവ്: സ്ലാബ് തകർന്ന് ഗർത്തം', 40, (255, 215, 215), dot=False)
+        if t > 3.2: label(d, (x + 50 * S, y + 30 * S) if not V else (x - 330 * S, y + 200 * S), 'ചരക്കുവാഹനങ്ങൾക്ക് നിരോധനം', 40, (255, 215, 215), dot=False)
+        title(d, 'പത്താം വളവിൽ ഗർത്തം', 'സെപ്റ്റംബർ 2026')
+        return img
     if SCENE == 'ambulance':
         z = ease(t / 1.5)
         cam = Cam(lerp(76.6, 76.42, z), lerp(11.05, 10.78, z), lerp(0.5, 1.05, z) if not V else lerp(0.36, 0.75, z))
