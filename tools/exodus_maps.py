@@ -7,7 +7,7 @@ W, H, SCENE, DUR, OUT = int(sys.argv[1]), int(sys.argv[2]), sys.argv[3], float(s
 V = H > W
 S = (W / 1920) if not V else (W / 1080)
 FPS = 25
-NAVY, BLUE, TINT, WHITE, RED = (6, 54, 74), (10, 122, 191), (124, 200, 255), (255, 255, 255), (226, 59, 59)
+NAVY, BLUE, TINT, WHITE, RED = (6, 54, 74), (10, 122, 191), (124, 200, 255), (255, 255, 255), (124, 200, 255)
 BG = (4, 26, 38)
 FD = '/home/claude/vid/fonts/'
 def mj(sz): return ImageFont.truetype(FD + 'manjari-full-700.ttf', int(sz), layout_engine=ImageFont.Layout.RAQM)
@@ -117,8 +117,8 @@ def frame(i):
             for k, (dx, dy) in enumerate([(-1, 0.25), (-1, -0.15), (-0.8, 0.6)]):
                 tt = ease((t - 3.0 - k * 0.25) / 1.2)
                 if tt > 0:
-                    arrow(d, (w[0] - 30 * S, w[1]), (w[0] + dx * 260 * S, w[1] + dy * 260 * S), tt, (255, 220, 220, 255), int(7 * S))
-            label(d, (w[0], w[1] + 120 * S), 'പടിഞ്ഞാറൻ മേഖല', 38, (255, 200, 200), dot=False)
+                    arrow(d, (w[0] - 30 * S, w[1]), (w[0] + dx * 260 * S, w[1] + dy * 260 * S), tt, (255, 255, 255, 255), int(7 * S))
+            label(d, (w[0], w[1] + 120 * S), 'പടിഞ്ഞാറൻ മേഖല', 38, (255, 255, 255), dot=False)
         if t > 1.6: label(d, cam.px(76.66, 11.14), 'അട്ടപ്പാടി', 46, TINT, dot=False)
         label(d, cam.px(*P['പാലക്കാട്']), 'പാലക്കാട്', 32)
         title(d, 'കുടിയിറങ്ങുന്ന കർഷകർ', 'പടിഞ്ഞാറൻ അട്ടപ്പാടി')
@@ -128,8 +128,8 @@ def frame(i):
         img, d = base(cam)
         pts = [cam.px(*P[n]) for n in CHURAM]
         d.line(pts, fill=(255, 255, 255, 40), width=int(18 * S), joint='curve')
-        head = polyline(d, pts, ease(t / 3.0), (255, 200, 60, 255), int(10 * S))
-        d.ellipse([head[0] - 12 * S, head[1] - 12 * S, head[0] + 12 * S, head[1] + 12 * S], fill=(255, 200, 60))
+        head = polyline(d, pts, ease(t / 3.0), (124, 200, 255, 255), int(10 * S))
+        d.ellipse([head[0] - 12 * S, head[1] - 12 * S, head[0] + 12 * S, head[1] + 12 * S], fill=(124, 200, 255))
         for j, n in enumerate(CHURAM):
             if t > j * 0.6: label(d, cam.px(*P[n]), n, 34, anchor='r' if n in ('ആനമൂളി', 'മന്ദംപൊട്ടി') else 'l')
         # pothole stretch Anamooli - Mandampotti
@@ -138,12 +138,12 @@ def frame(i):
             pulse = int(150 + 100 * math.sin(t * 6))
             d.line([a, b], fill=RED + (pulse,), width=int(14 * S))
             mx, my = (a[0] + b[0]) / 2, (a[1] + b[1]) / 2
-            label(d, (mx - 40 * S, my + 45 * S), 'കുഴികൾ', 34, (255, 200, 200), dot=False, anchor='r')
+            label(d, (mx - 40 * S, my + 45 * S), 'കുഴികൾ', 34, (255, 255, 255), dot=False, anchor='r')
         if t > 4.6:  # 10th bend X
             x, y = cam.px(76.505, 11.038)
             r = 26 * S * ease((t - 4.6) / 0.4)
             d.line([(x - r, y - r), (x + r, y + r)], fill=RED, width=int(10 * S)); d.line([(x - r, y + r), (x + r, y - r)], fill=RED, width=int(10 * S))
-            label(d, (x + 40 * S, y + 10 * S), 'പത്താം വളവ്: ചരക്കുവാഹന നിരോധനം', 32, (255, 210, 210), dot=False)
+            label(d, (x + 40 * S, y + 10 * S), 'പത്താം വളവ്: ചരക്കുവാഹന നിരോധനം', 32, (255, 255, 255), dot=False)
         title(d, 'ഏക വഴി: അട്ടപ്പാടി ചുരം', '25 വർഷമായി മാറ്റമില്ല')
         return img
     if SCENE == 'bend':
@@ -151,7 +151,7 @@ def frame(i):
         cam = Cam(lerp(76.56, 76.505, z), lerp(11.045, 11.038, z), lerp(0.42 if not V else 0.30, 0.09 if not V else 0.07, z))
         img, d = base(cam)
         pts = [cam.px(*P[n]) for n in CHURAM]
-        d.line(pts, fill=(255, 200, 60, 255), width=int(14 * S), joint='curve')
+        d.line(pts, fill=(124, 200, 255, 255), width=int(14 * S), joint='curve')
         for n in ['ആനമൂളി', 'മന്ദംപൊട്ടി']: label(d, cam.px(*P[n]), n, 36, anchor='r')
         x, y = cam.px(76.505, 11.038)
         if t > 1.4:
@@ -160,8 +160,8 @@ def frame(i):
             d.ellipse([x - r, y - r, x + r, y + r], outline=RED + (int(255 * (1 - ph)),), width=int(8 * S))
             r2 = 34 * S
             d.line([(x - r2, y - r2), (x + r2, y + r2)], fill=RED, width=int(14 * S)); d.line([(x - r2, y + r2), (x + r2, y - r2)], fill=RED, width=int(14 * S))
-        if t > 2.0: label(d, (x + 50 * S, y - 60 * S) if not V else (x - 330 * S, y + 120 * S), 'പത്താം വളവ്: സ്ലാബ് തകർന്ന് ഗർത്തം', 40, (255, 215, 215), dot=False)
-        if t > 3.2: label(d, (x + 50 * S, y + 30 * S) if not V else (x - 330 * S, y + 200 * S), 'ചരക്കുവാഹനങ്ങൾക്ക് നിരോധനം', 40, (255, 215, 215), dot=False)
+        if t > 2.0: label(d, (x + 50 * S, y - 60 * S) if not V else (x - 330 * S, y + 120 * S), 'പത്താം വളവ്: സ്ലാബ് തകർന്ന് ഗർത്തം', 40, (255, 255, 255), dot=False)
+        if t > 3.2: label(d, (x + 50 * S, y + 30 * S) if not V else (x - 330 * S, y + 200 * S), 'ചരക്കുവാഹനങ്ങൾക്ക് നിരോധനം', 40, (255, 255, 255), dot=False)
         title(d, 'പത്താം വളവിൽ ഗർത്തം', 'സെപ്റ്റംബർ 2026')
         return img
     if SCENE == 'ambulance':
@@ -173,14 +173,14 @@ def frame(i):
         d.line(pts, fill=(255, 255, 255, 40), width=int(16 * S), joint='curve')
         # ambulance stops at Mandampotti between 2.5-4.5s
         prog = ease(t / 2.4) * 0.42 if t < 4.4 else 0.42 + ease((t - 4.4) / 2.0) * 0.58
-        head = polyline(d, pts, prog, (255, 80, 80, 255), int(9 * S))
-        blink = (255, 60, 60) if int(t * 4) % 2 else (60, 140, 255)
+        head = polyline(d, pts, prog, (124, 200, 255, 255), int(9 * S))
+        blink = (124, 200, 255) if int(t * 4) % 2 else (10, 122, 191)
         d.ellipse([head[0] - 15 * S, head[1] - 15 * S, head[0] + 15 * S, head[1] + 15 * S], fill=blink, outline=WHITE, width=int(3 * S))
         for n in ['കോട്ടത്തറ', 'മന്ദംപൊട്ടി', 'തൃശൂർ മെഡി. കോളേജ്']:
             label(d, cam.px(*P[n]), n, 32, anchor='r' if (n == 'മന്ദംപൊട്ടി' or (V and n == 'കോട്ടത്തറ')) else 'l')
         if 2.3 < t:
             x, y = cam.px(*P['മന്ദംപൊട്ടി'])
-            label(d, (x + 20 * S, y + 60 * S) if not V else (x - 10 * S, y + 120 * S), 'മരം വീണു: 1 മണിക്കൂർ കുരുക്ക്', 32, (255, 210, 210), dot=False, anchor='l' if not V else 'r')
+            label(d, (x + 20 * S, y + 60 * S) if not V else (x - 10 * S, y + 120 * S), 'മരം വീണു: 1 മണിക്കൂർ കുരുക്ക്', 32, (255, 255, 255), dot=False, anchor='l' if not V else 'r')
         title(d, 'ചികിത്സയ്ക്ക് ചുരം കടക്കണം', 'കോട്ടത്തറ മുതൽ തൃശൂർ മെഡിക്കൽ കോളേജ് വരെ')
         return img
     if SCENE == 'land':
@@ -193,12 +193,12 @@ def frame(i):
         label(d, cam.px(77.02, 10.93), 'തമിഴ്നാട്', 36, dot=False)
         for k, (s0, e0) in enumerate([((77.08, 11.20), (76.71, 11.14)), ((77.12, 11.08), (76.73, 11.09)), ((77.08, 10.97), (76.71, 11.04))]):
             tt = ease((t - 0.6 - k * 0.35) / 1.4)
-            if tt > 0: arrow(d, cam.px(*s0), cam.px(*e0), tt, (255, 190, 70, 255), int(8 * S))
+            if tt > 0: arrow(d, cam.px(*s0), cam.px(*e0), tt, (124, 200, 255, 255), int(8 * S))
         for k, (dx, dy) in enumerate([(-0.07, 0.03), (0.04, -0.04), (-0.02, -0.07), (0.08, 0.05)]):
             if t > 2.2 + k * 0.3:
                 x, y = cam.px(ATT[0] + dx, ATT[1] + dy)
                 f = mj(26 * S); tw = d.textlength('വിറ്റു', font=f)
-                d.rounded_rectangle([x - tw / 2 - 12 * S, y - 20 * S, x + tw / 2 + 12 * S, y + 22 * S], int(6 * S), fill=RED + (230,))
+                d.rounded_rectangle([x - tw / 2 - 12 * S, y - 20 * S, x + tw / 2 + 12 * S, y + 22 * S], int(6 * S), fill=(10, 122, 191, 230))
                 d.text((x, y + 2 * S), 'വിറ്റു', font=f, fill=WHITE, anchor='mm')
         title(d, 'ഭൂമി വാങ്ങിക്കൂട്ടൽ, റിസോർട്ട് മാഫിയ', 'ആരോപണം')
         return img

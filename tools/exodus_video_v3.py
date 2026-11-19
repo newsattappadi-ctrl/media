@@ -10,7 +10,7 @@ LIB = '/home/claude/media/assets/library/'
 AUD = '/home/claude/media/assets/audio/'
 FD = '/home/claude/vid/fonts/'
 TMP = f'/home/claude/vid2/tmp_{W}x{H}/'; os.makedirs(TMP, exist_ok=True)
-NAVY, BLUE, WHITE, TINT, RED = (6, 54, 74), (10, 122, 191), (255, 255, 255), (124, 200, 255), (214, 48, 48)
+NAVY, BLUE, WHITE, TINT, RED = (6, 54, 74), (10, 122, 191), (255, 255, 255), (124, 200, 255), (10, 122, 191)
 FPS = 25
 INTRO = 1.0
 def mj(sz): return ImageFont.truetype(FD + 'manjari-full-700.ttf', int(sz), layout_engine=ImageFont.Layout.RAQM)
@@ -117,8 +117,8 @@ def esa_stamp_png():
     cx, cy = W / 2, H * (0.36 if V else 0.38)
     box = Image.new('RGBA', (int(tw + 80 * S), int(130 * S)), (0, 0, 0, 0)); bd = ImageDraw.Draw(box)
     box = Image.new('RGBA', (int(tw + 90 * S), int(170 * S)), (0, 0, 0, 0)); bd = ImageDraw.Draw(box)
-    bd.rectangle([4, 4, box.width - 4, box.height - 4], fill=(255, 255, 255, 215), outline=RED + (255,), width=int(12 * S))
-    bd.text((box.width / 2, box.height / 2 + 4 * S), t, font=f, fill=RED + (255,), anchor='mm')
+    bd.rectangle([4, 4, box.width - 4, box.height - 4], fill=(255, 255, 255, 215), outline=NAVY + (255,), width=int(12 * S))
+    bd.text((box.width / 2, box.height / 2 + 4 * S), t, font=f, fill=NAVY + (255,), anchor='mm')
     box = box.rotate(-8, expand=True, resample=Image.BICUBIC)
     img.alpha_composite(box, (int(cx - box.width / 2), int(cy - box.height / 2)))
     p = TMP + 'esa.png'; img.save(p); return p
