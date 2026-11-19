@@ -1,1 +1,4 @@
-
+query ok goat_attappadi
+query ok black_goat_kerala
+query ok attappadi_tribal
+query ok attappadi_all
