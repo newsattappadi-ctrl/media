@@ -6,7 +6,7 @@ and saved to assets/library/<file>. Only the hosts in ALLOWED are contacted.
 Credits are recorded separately in assets/library/credits.json."""
 import json, pathlib, re, sys, time, io, urllib.request, urllib.parse
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-ALLOWED = ('.wikimedia.org', '.wikipedia.org', '.pexels.com', '.pixabay.com')
+ALLOWED = ('.wikimedia.org', '.wikipedia.org', '.pexels.com', '.pixabay.com', '.cdnpk.net')
 UA = 'NewsAttappadiBot/1.0 (https://github.com/newsattappadi-ctrl/media; newsattappadi@gmail.com)'
 
 def get(url):
@@ -48,5 +48,12 @@ for d in req.get('downloads', []):
     except Exception as e:
         log.append('download FAILED %s: %s' % (fn, e))
     time.sleep(1)
+aud = ROOT / 'assets/audio'; aud.mkdir(exist_ok=True)
+for d in req.get('files', []):
+    fn = re.sub(r'[^a-z0-9_.-]', '', d['file'].lower())
+    try:
+        (aud / fn).write_bytes(get(d['url'])); log.append('file ok ' + fn)
+    except Exception as e:
+        log.append('file FAILED %s: %s' % (fn, e))
 (cache / '_last_run.txt').write_text('\n'.join(log) + '\n', encoding='utf-8')
 print('\n'.join(log))

@@ -1,65 +1,38 @@
 {
  "queries": [],
- "downloads": [
+ "downloads": [],
+ "files": [
   {
-   "file": "v_thachampara.jpg",
-   "url": "https://upload.wikimedia.org/wikipedia/commons/7/75/Thachampara_town.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+   "file": "exodus_music.mp3",
+   "url": "https://pikaso.cdnpk.net/private/production/6093091583/a3431d62-8ef4-4004-86d8-36ee6c0eb791.mp3?token=exp=1795478400~hmac=73e1175ebf88f2d602e881b50a6feabbe88dbcd0106729cc06a25d31473e63bf"
   },
   {
-   "file": "v_festival.jpg",
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/Attappadi_festival.jpg/1920px-Attappadi_festival.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+   "file": "exodus_s1.wav",
+   "url": "https://pikaso.cdnpk.net/private/production/6093085279/audio.wav?token=exp=1795478400~hmac=6b8001a855b53b84562bcb02144fa8759b0311732043adeed7bf9bdfe9fe08c2"
   },
   {
-   "file": "v_ghat_e.jpg",
-   "url": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Attappadi_ghat_road.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+   "file": "exodus_s2.wav",
+   "url": "https://pikaso.cdnpk.net/private/production/6093085452/audio.wav?token=exp=1795478400~hmac=0a8b13922c366906cb9d4906222e9dfe7f4ed5ec7404718f4aa4ad23a64a5c5f"
   },
   {
-   "file": "v_ghat_a.jpg",
-   "url": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Attappadi_ghat_road_%2829728%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+   "file": "exodus_s3.wav",
+   "url": "https://pikaso.cdnpk.net/private/production/6093085347/audio.wav?token=exp=1795478400~hmac=0200aacbd2080efa686c104c41afbaae0cc2a9a33e38c578ba50a561fc9861f9"
   },
   {
-   "file": "v_ghat_d.jpg",
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/Attappadi_ghat_road_%2834022%29.jpg/1920px-Attappadi_ghat_road_%2834022%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+   "file": "exodus_s4.wav",
+   "url": "https://pikaso.cdnpk.net/private/production/6093087034/audio.wav?token=exp=1795478400~hmac=7c1f1cf4af827988387ba81b3e13ff3fb381d4faad77cc3ccda0beff522ecc0f"
   },
   {
-   "file": "v_ghat_b.jpg",
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/Attappadi_ghat_road_%2869557%29.jpg/1920px-Attappadi_ghat_road_%2869557%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+   "file": "exodus_s5.wav",
+   "url": "https://pikaso.cdnpk.net/private/production/6093087365/audio.wav?token=exp=1795478400~hmac=9f9a44189d2692ce5831e0d3d1493c00cd67681baae6f316676b8cb77c179d4a"
   },
   {
-   "file": "v_ghat_c.jpg",
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Attappadi_ghat_road_%2892772%29.jpg/1920px-Attappadi_ghat_road_%2892772%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+   "file": "exodus_s6.wav",
+   "url": "https://pikaso.cdnpk.net/private/production/6093088044/audio.wav?token=exp=1795478400~hmac=0929d411373f4a54fc089340f17eb208b9bc9a437c46a822ac2e3f80ff846075"
   },
   {
-   "file": "v_view_b.jpg",
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/View_of_Attappadi_%2870899%29.jpg/1920px-View_of_Attappadi_%2870899%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
-  },
-  {
-   "file": "v_view_a.jpg",
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/View_of_Attappadi_%2872795%29.jpg/1920px-View_of_Attappadi_%2872795%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
-  },
-  {
-   "file": "v_mukkali_sv.jpg",
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/Mukkali%2C_Silent_Valley.jpg/1920px-Mukkali%2C_Silent_Valley.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
-  },
-  {
-   "file": "v_mukkali_2025.jpg",
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Mukkali_IMG_20250325_144414.jpg/1920px-Mukkali_IMG_20250325_144414.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
-  },
-  {
-   "file": "v_hills_c.jpg",
-   "url": "https://upload.wikimedia.org/wikipedia/commons/7/72/Attappady_Hills.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
-  },
-  {
-   "file": "v_landscape_a.jpg",
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Landscape_of_Attappady_-_image.jpg/1920px-Landscape_of_Attappady_-_image.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
-  },
-  {
-   "file": "v_landscape_b.jpg",
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/Landscape_of_Attappady_-photo.jpg/1920px-Landscape_of_Attappady_-photo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
-  },
-  {
-   "file": "v_cowpea.jpg",
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/Seeds_of_Cowpea_at_Attappady_in_Kerala.jpg/1920px-Seeds_of_Cowpea_at_Attappady_in_Kerala.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+   "file": "exodus_s7.wav",
+   "url": "https://pikaso.cdnpk.net/private/production/6093089008/audio.wav?token=exp=1795478400~hmac=851a9975bdde39b3c829fb785f74e995c1801b21f99ae52c05dc6543b9bee567"
   }
  ]
 }

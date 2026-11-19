@@ -20,7 +20,7 @@ jobs:
         run: |
           git config user.name "news-attappadi-bot"
           git config user.email "newsattappadi@gmail.com"
-          git add assets/library tools/photo-cache
+          git add assets/library assets/audio tools/photo-cache
           git diff --cached --quiet || git commit -m "Photo fetch: update library and search cache"
           git pull --rebase origin main
           git push origin HEAD:main
