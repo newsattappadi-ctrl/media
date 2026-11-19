@@ -1,17 +1,13 @@
 {
- "queries": [],
- "downloads": [
+ "queries": [
   {
-   "file": "attappadi_black_goat.jpg",
-   "url": "https://upload.wikimedia.org/wikipedia/commons/6/61/Attapadi_Black_Goat.jpg"
+   "out": "baby_feet",
+   "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=newborn+baby+feet+filetype%3Abitmap&gsrnamespace=6&gsrlimit=40&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize%7Cmime&iiextmetadatafilter=LicenseShortName%7CArtist%7CImageDescription&iiurlwidth=1600&format=json"
   },
   {
-   "file": "anavai_hanging_bridge.jpg",
-   "url": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Attappady_tribal_area.jpg"
-  },
-  {
-   "file": "tribal_rhythms.jpg",
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/Tribal_Rhythms.jpg/1920px-Tribal_Rhythms.jpg"
+   "out": "infant_foot",
+   "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=infant+foot+close-up+filetype%3Abitmap&gsrnamespace=6&gsrlimit=40&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize%7Cmime&iiextmetadatafilter=LicenseShortName%7CArtist%7CImageDescription&iiurlwidth=1600&format=json"
   }
- ]
+ ],
+ "downloads": []
 }
