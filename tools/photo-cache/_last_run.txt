@@ -1,7 +1,3 @@
-download ok r_kottathara_ambulance.jpg 1280x960
-download ok r_attapadi_plains.jpg 1600x1083
-download ok r_attapady_hills.jpg 1024x654
-download ok r_attapady_panoramio.jpg 1248x936
-download ok r_agali_tower.jpg 1593x1198
-download ok r_agali_school_theatre.jpg 1600x703
-file ok x3_vo.wav
+query ok umb1
+query ok umb2
+query ok umb3
