@@ -1,45 +1,49 @@
 {
- "queries": [],
- "downloads": [
+ "queries": [
   {
-   "file": "id_anganwadi.jpg",
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/Anganwadi_center.jpg/1920px-Anganwadi_center.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+   "out": "v_attappadi_video",
+   "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=filetype%3Avideo+Attappadi&gsrnamespace=6&gsrlimit=30&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize%7Cmime&iiurlwidth=1600&format=json"
   },
   {
-   "file": "id_shadow_wall.jpg",
-   "url": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Shadow_On_The_Wall_%2841848612%29.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+   "out": "v_attappady_video",
+   "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=filetype%3Avideo+Attappady&gsrnamespace=6&gsrlimit=30&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize%7Cmime&iiurlwidth=1600&format=json"
   },
   {
-   "file": "id_rupee_notes.jpg",
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/Indian_100_and_2000_rupee_notes_%2832190943222%29.jpg/1920px-Indian_100_and_2000_rupee_notes_%2832190943222%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+   "out": "v_palakkad_video",
+   "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=filetype%3Avideo+Palakkad+hills+road&gsrnamespace=6&gsrlimit=30&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize%7Cmime&iiurlwidth=1600&format=json"
   },
   {
-   "file": "id_press_mics.jpg",
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/News_Microphones_at_Press_Conference.jpg/1920px-News_Microphones_at_Press_Conference.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+   "out": "v_silentvalley_video",
+   "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=filetype%3Avideo+Silent+Valley+Kerala&gsrnamespace=6&gsrlimit=30&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize%7Cmime&iiurlwidth=1600&format=json"
   },
   {
-   "file": "id_mother_doorway_silhouette.jpg",
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/A_mother_holds_her_young_child_close_in_a_doorway%2C_silhouetted_by_soft_evening_light.jpg/1920px-A_mother_holds_her_young_child_close_in_a_doorway%2C_silhouetted_by_soft_evening_light.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+   "out": "i_attappadi_ghat",
+   "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=filetype%3Abitmap+Attappadi+ghat+road&gsrnamespace=6&gsrlimit=30&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize%7Cmime&iiurlwidth=1600&format=json"
   },
   {
-   "file": "id_empty_plate.jpg",
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/Empty_Food_plate_with_minimal_food_wastage.jpg/1920px-Empty_Food_plate_with_minimal_food_wastage.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+   "out": "i_attappady_all",
+   "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=filetype%3Abitmap+Attappady&gsrnamespace=6&gsrlimit=30&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize%7Cmime&iiurlwidth=1600&format=json"
   },
   {
-   "file": "id_pregnant_silhouette.jpg",
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/Silhouetted_baby_bump_%28Unsplash%29.jpg/1920px-Silhouetted_baby_bump_%28Unsplash%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+   "out": "i_attappadi_all",
+   "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=filetype%3Abitmap+Attappadi&gsrnamespace=6&gsrlimit=30&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize%7Cmime&iiurlwidth=1600&format=json"
   },
   {
-   "file": "id_feet_bed.jpg",
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/Baby-baby-feet-bed-325690.jpg/1920px-Baby-baby-feet-bed-325690.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+   "out": "i_agali",
+   "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=filetype%3Abitmap+Agali&gsrnamespace=6&gsrlimit=30&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize%7Cmime&iiurlwidth=1600&format=json"
   },
   {
-   "file": "id_hand_baby_feet.jpg",
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Close-up_of_a_hand_holding_the_feet_of_a_baby_closeup.jpg/1920px-Close-up_of_a_hand_holding_the_feet_of_a_baby_closeup.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+   "out": "i_mukkali",
+   "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=filetype%3Abitmap+Mukkali&gsrnamespace=6&gsrlimit=30&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize%7Cmime&iiurlwidth=1600&format=json"
   },
   {
-   "file": "id_sole_fingers.jpg",
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/Sole_of_foot_of_an_infant_held_between_the_middle_finger_and_the_ring_finger_of_an_adult_hand_for_size_comparison.jpg/1920px-Sole_of_foot_of_an_infant_held_between_the_middle_finger_and_the_ring_finger_of_an_adult_hand_for_size_comparison.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+   "out": "i_anakatti",
+   "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=filetype%3Abitmap+Anakatti&gsrnamespace=6&gsrlimit=30&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize%7Cmime&iiurlwidth=1600&format=json"
+  },
+  {
+   "out": "i_mannarkkad_road",
+   "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=filetype%3Abitmap+Mannarkkad+road&gsrnamespace=6&gsrlimit=30&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize%7Cmime&iiurlwidth=1600&format=json"
   }
- ]
+ ],
+ "downloads": []
 }
