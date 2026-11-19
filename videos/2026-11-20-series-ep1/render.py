@@ -6,7 +6,7 @@ S_=W/1920 if not V else W/1080
 T=f'/home/claude/ep1/tmp_{W}x{H}/'; os.makedirs(T,exist_ok=True)
 AUD='/home/claude/media/assets/audio/'
 NAVY,BLUE,GREY,WHITE,TINT=(6,54,74),(10,122,191),(77,77,77),(255,255,255),(124,200,255)
-FPS=25; GAP=0.45
+FPS=25; GAP=0.3
 FD='/home/claude/vid/fonts/'
 def mj(z): return ImageFont.truetype(FD+'manjari-full-700.ttf',int(z),layout_engine=ImageFont.Layout.RAQM)
 def bc(z): return ImageFont.truetype(FD+'barlow-condensed-latin-700-normal.ttf',int(z))
@@ -81,7 +81,7 @@ def card(kind,data):
                 d.text((x,y-s(40)),n,font=bc(s(100)),fill=WHITE,anchor='mm'); d.text((x,y+s(55)),t,font=mj(s(56)),fill=WHITE,anchor='mm')
         ctext('ഭാഗം 1: കാട് പോയി, പുഴ വറ്റി',cy+s(560 if V else 260),fit(d,'ഭാഗം 1: കാട് പോയി, പുഴ വറ്റി',s(58),W-s(100)))
     elif kind=='stat':
-        big,lab=data; f=fit(d,big,s(300 if V else 280),W-s(120),bc)
+        big,lab=data; f=fit(d,big,s(300 if V else 280),W-s(120),bc if big[0].isdigit() else mj)
         ctext(big,cy-s(40),f,WHITE)
         for i,ln in enumerate(wrap(d,lab,mj(s(60)),W-s(140))): ctext(ln,cy+s(170)+i*s(80),mj(s(60)),TINT)
     elif kind=='timeline':
@@ -158,7 +158,7 @@ for sec,shots in S:
             card(sh[1],sh[2]).save(base); chrome(None).save(ov) if sh[1] not in('title','parts','next') else Image.new('RGBA',(W,H),(0,0,0,0)).save(ov); kb=False
         fr=int(round(per*FPS))
         z="min(1.0+0.0007*on,1.15)" if kb else "1.0+0.00012*on"
-        vf=f"scale={int(W*1.2)}:{int(H*1.2)},zoompan=z='{z}':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d={fr}:s={W}x{H}:fps={FPS}[bg];[1:v]format=rgba,fade=t=in:st=0.15:d=0.35:alpha=1[ov];[bg][ov]overlay=0:0,fade=t=in:st=0:d=0.25,format=yuv420p"
+        vf=f"scale={int(W*1.2)}:{int(H*1.2)},zoompan=z='{z}':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d={fr}:s={W}x{H}:fps={FPS}[bg];[1:v]format=rgba,fade=t=in:st=0.15:d=0.35:alpha=1[ov];[bg][ov]overlay=0:0,format=yuv420p"
         subprocess.run(['ffmpeg','-y','-v','error','-loop','1','-i',base,'-loop','1','-i',ov,'-filter_complex',vf,'-frames:v',str(fr),'-c:v','libx264','-preset','veryfast','-crf','20','-r',str(FPS),vid],check=True)
         segs.append(vid)
 # end card
