@@ -1,17 +1,61 @@
 {
- "queries": [],
- "downloads": [
+ "queries": [
   {
-   "file": "baby_feet_1.jpg",
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Newborn_baby_feet_%28Unsplash%29.jpg/1920px-Newborn_baby_feet_%28Unsplash%29.jpg"
+   "out": "x_newborn_hand_finger",
+   "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=filetype%3Abitmap+newborn+baby+hand+holding+finger&gsrnamespace=6&gsrlimit=12&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize&iiurlwidth=1600&format=json"
   },
   {
-   "file": "baby_feet_2.jpg",
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/Newborn_feet_nestled_gently_in_a_parent%27s_hand_highlighting_the_bond_of_love_and_care_at_home.jpg/1920px-Newborn_feet_nestled_gently_in_a_parent%27s_hand_highlighting_the_bond_of_love_and_care_at_home.jpg"
+   "out": "x_baby_footprint",
+   "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=filetype%3Abitmap+baby+footprint+ink&gsrnamespace=6&gsrlimit=12&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize&iiurlwidth=1600&format=json"
   },
   {
-   "file": "baby_feet_3.jpg",
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/2018-06-07_Newborn_baby_feet_%26_mother.jpg/1920px-2018-06-07_Newborn_baby_feet_%26_mother.jpg"
+   "out": "x_empty_cradle",
+   "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=filetype%3Abitmap+empty+cradle&gsrnamespace=6&gsrlimit=12&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize&iiurlwidth=1600&format=json"
+  },
+  {
+   "out": "x_mother_child_silhouette",
+   "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=filetype%3Abitmap+mother+child+silhouette&gsrnamespace=6&gsrlimit=12&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize&iiurlwidth=1600&format=json"
+  },
+  {
+   "out": "x_pregnant_silhouette",
+   "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=filetype%3Abitmap+pregnant+woman+silhouette&gsrnamespace=6&gsrlimit=12&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize&iiurlwidth=1600&format=json"
+  },
+  {
+   "out": "x_empty_plate",
+   "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=filetype%3Abitmap+empty+plate&gsrnamespace=6&gsrlimit=12&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize&iiurlwidth=1600&format=json"
+  },
+  {
+   "out": "x_ration_rice_india",
+   "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=filetype%3Abitmap+ration+shop+rice+India&gsrnamespace=6&gsrlimit=12&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize&iiurlwidth=1600&format=json"
+  },
+  {
+   "out": "x_rupee_notes",
+   "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=filetype%3Abitmap+Indian+rupee+notes&gsrnamespace=6&gsrlimit=12&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize&iiurlwidth=1600&format=json"
+  },
+  {
+   "out": "x_hospital_bed_empty",
+   "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=filetype%3Abitmap+empty+hospital+bed+India&gsrnamespace=6&gsrlimit=12&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize&iiurlwidth=1600&format=json"
+  },
+  {
+   "out": "x_microphones_press",
+   "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=filetype%3Abitmap+microphones+press+conference&gsrnamespace=6&gsrlimit=12&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize&iiurlwidth=1600&format=json"
+  },
+  {
+   "out": "x_candle_vigil_hands",
+   "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=filetype%3Abitmap+candle+hands+vigil&gsrnamespace=6&gsrlimit=12&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize&iiurlwidth=1600&format=json"
+  },
+  {
+   "out": "x_hands_holding_baby_feet",
+   "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=filetype%3Abitmap+hands+holding+baby+feet&gsrnamespace=6&gsrlimit=12&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize&iiurlwidth=1600&format=json"
+  },
+  {
+   "out": "x_anganwadi",
+   "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=filetype%3Abitmap+anganwadi&gsrnamespace=6&gsrlimit=12&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize&iiurlwidth=1600&format=json"
+  },
+  {
+   "out": "x_shadow_person_wall",
+   "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=filetype%3Abitmap+shadow+of+person+on+wall&gsrnamespace=6&gsrlimit=12&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize&iiurlwidth=1600&format=json"
   }
- ]
+ ],
+ "downloads": []
 }
