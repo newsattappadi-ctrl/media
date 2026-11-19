@@ -1,2 +1,3 @@
-query ok baby_feet
-query ok infant_foot
+download ok baby_feet_1.jpg 1600x1235
+download ok baby_feet_2.jpg 1600x1065
+download ok baby_feet_3.jpg 1600x1199
