@@ -1,15 +1,8 @@
-download ok v_thachampara.jpg 1228x1534
-download ok v_festival.jpg 1200x1600
-download ok v_ghat_e.jpg 900x1600
-download ok v_ghat_a.jpg 900x1600
-download ok v_ghat_d.jpg 900x1600
-download ok v_ghat_b.jpg 900x1600
-download ok v_ghat_c.jpg 900x1600
-download ok v_view_b.jpg 1600x900
-download ok v_view_a.jpg 1600x900
-download ok v_mukkali_sv.jpg 1600x1200
-download ok v_mukkali_2025.jpg 1200x1600
-download ok v_hills_c.jpg 960x720
-download ok v_landscape_a.jpg 1600x720
-download ok v_landscape_b.jpg 1600x720
-download ok v_cowpea.jpg 1600x900
+file ok exodus_music.mp3
+file ok exodus_s1.wav
+file ok exodus_s2.wav
+file ok exodus_s3.wav
+file ok exodus_s4.wav
+file ok exodus_s5.wav
+file ok exodus_s6.wav
+file ok exodus_s7.wav
