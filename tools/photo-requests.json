@@ -1,1 +1,21 @@
-{"queries":[],"downloads":[]}
+{
+ "queries": [
+  {
+   "out": "goat_attappadi",
+   "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Attappadi+goat+filetype%3Abitmap&gsrnamespace=6&gsrlimit=40&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize%7Cmime&iiextmetadatafilter=LicenseShortName%7CArtist%7CImageDescription&iiurlwidth=1600&format=json"
+  },
+  {
+   "out": "black_goat_kerala",
+   "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=black+goat+Kerala+filetype%3Abitmap&gsrnamespace=6&gsrlimit=40&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize%7Cmime&iiextmetadatafilter=LicenseShortName%7CArtist%7CImageDescription&iiurlwidth=1600&format=json"
+  },
+  {
+   "out": "attappadi_tribal",
+   "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Attappadi+tribal+filetype%3Abitmap&gsrnamespace=6&gsrlimit=40&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize%7Cmime&iiextmetadatafilter=LicenseShortName%7CArtist%7CImageDescription&iiurlwidth=1600&format=json"
+  },
+  {
+   "out": "attappadi_all",
+   "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Attappadi+filetype%3Abitmap&gsrnamespace=6&gsrlimit=40&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize%7Cmime&iiextmetadatafilter=LicenseShortName%7CArtist%7CImageDescription&iiurlwidth=1600&format=json"
+  }
+ ],
+ "downloads": []
+}
