@@ -1,61 +1,45 @@
 {
- "queries": [
+ "queries": [],
+ "downloads": [
   {
-   "out": "x_newborn_hand_finger",
-   "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=filetype%3Abitmap+newborn+baby+hand+holding+finger&gsrnamespace=6&gsrlimit=12&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize&iiurlwidth=1600&format=json"
+   "file": "id_anganwadi.jpg",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/Anganwadi_center.jpg/1920px-Anganwadi_center.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
   },
   {
-   "out": "x_baby_footprint",
-   "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=filetype%3Abitmap+baby+footprint+ink&gsrnamespace=6&gsrlimit=12&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize&iiurlwidth=1600&format=json"
+   "file": "id_shadow_wall.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Shadow_On_The_Wall_%2841848612%29.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
   },
   {
-   "out": "x_empty_cradle",
-   "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=filetype%3Abitmap+empty+cradle&gsrnamespace=6&gsrlimit=12&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize&iiurlwidth=1600&format=json"
+   "file": "id_rupee_notes.jpg",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/Indian_100_and_2000_rupee_notes_%2832190943222%29.jpg/1920px-Indian_100_and_2000_rupee_notes_%2832190943222%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
   },
   {
-   "out": "x_mother_child_silhouette",
-   "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=filetype%3Abitmap+mother+child+silhouette&gsrnamespace=6&gsrlimit=12&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize&iiurlwidth=1600&format=json"
+   "file": "id_press_mics.jpg",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/News_Microphones_at_Press_Conference.jpg/1920px-News_Microphones_at_Press_Conference.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
   },
   {
-   "out": "x_pregnant_silhouette",
-   "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=filetype%3Abitmap+pregnant+woman+silhouette&gsrnamespace=6&gsrlimit=12&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize&iiurlwidth=1600&format=json"
+   "file": "id_mother_doorway_silhouette.jpg",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/A_mother_holds_her_young_child_close_in_a_doorway%2C_silhouetted_by_soft_evening_light.jpg/1920px-A_mother_holds_her_young_child_close_in_a_doorway%2C_silhouetted_by_soft_evening_light.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
   },
   {
-   "out": "x_empty_plate",
-   "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=filetype%3Abitmap+empty+plate&gsrnamespace=6&gsrlimit=12&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize&iiurlwidth=1600&format=json"
+   "file": "id_empty_plate.jpg",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/Empty_Food_plate_with_minimal_food_wastage.jpg/1920px-Empty_Food_plate_with_minimal_food_wastage.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
   },
   {
-   "out": "x_ration_rice_india",
-   "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=filetype%3Abitmap+ration+shop+rice+India&gsrnamespace=6&gsrlimit=12&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize&iiurlwidth=1600&format=json"
+   "file": "id_pregnant_silhouette.jpg",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/Silhouetted_baby_bump_%28Unsplash%29.jpg/1920px-Silhouetted_baby_bump_%28Unsplash%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
   },
   {
-   "out": "x_rupee_notes",
-   "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=filetype%3Abitmap+Indian+rupee+notes&gsrnamespace=6&gsrlimit=12&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize&iiurlwidth=1600&format=json"
+   "file": "id_feet_bed.jpg",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/Baby-baby-feet-bed-325690.jpg/1920px-Baby-baby-feet-bed-325690.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
   },
   {
-   "out": "x_hospital_bed_empty",
-   "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=filetype%3Abitmap+empty+hospital+bed+India&gsrnamespace=6&gsrlimit=12&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize&iiurlwidth=1600&format=json"
+   "file": "id_hand_baby_feet.jpg",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Close-up_of_a_hand_holding_the_feet_of_a_baby_closeup.jpg/1920px-Close-up_of_a_hand_holding_the_feet_of_a_baby_closeup.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
   },
   {
-   "out": "x_microphones_press",
-   "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=filetype%3Abitmap+microphones+press+conference&gsrnamespace=6&gsrlimit=12&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize&iiurlwidth=1600&format=json"
-  },
-  {
-   "out": "x_candle_vigil_hands",
-   "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=filetype%3Abitmap+candle+hands+vigil&gsrnamespace=6&gsrlimit=12&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize&iiurlwidth=1600&format=json"
-  },
-  {
-   "out": "x_hands_holding_baby_feet",
-   "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=filetype%3Abitmap+hands+holding+baby+feet&gsrnamespace=6&gsrlimit=12&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize&iiurlwidth=1600&format=json"
-  },
-  {
-   "out": "x_anganwadi",
-   "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=filetype%3Abitmap+anganwadi&gsrnamespace=6&gsrlimit=12&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize&iiurlwidth=1600&format=json"
-  },
-  {
-   "out": "x_shadow_person_wall",
-   "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=filetype%3Abitmap+shadow+of+person+on+wall&gsrnamespace=6&gsrlimit=12&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize&iiurlwidth=1600&format=json"
+   "file": "id_sole_fingers.jpg",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/Sole_of_foot_of_an_infant_held_between_the_middle_finger_and_the_ring_finger_of_an_adult_hand_for_size_comparison.jpg/1920px-Sole_of_foot_of_an_infant_held_between_the_middle_finger_and_the_ring_finger_of_an_adult_hand_for_size_comparison.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
   }
- ],
- "downloads": []
+ ]
 }
