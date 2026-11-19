@@ -1,1 +1,37 @@
-{"queries":[],"downloads":[]}
+{
+ "queries": [
+  {
+   "out": "ep1_titles",
+   "url": "https://commons.wikimedia.org/w/api.php?action=query&prop=imageinfo&iiprop=url%7Cextmetadata&iiurlwidth=1600&format=json&titles=File%3AAttappady+tribal+area.jpg%7CFile%3ATribal+deities.jpg%7CFile%3ATribal+Rhythms.jpg%7CFile%3ALandscape+of+Attappady+%2C+image.jpg%7CFile%3ALandscape+of+Attappady.jpg%7CFile%3ABeautiful+scenery+in+Attappadi.jpg%7CFile%3AIrulas1871.jpg%7CFile%3AAttappadi+Hills+5.jpg"
+  },
+  {
+   "out": "ep1_teak",
+   "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=teak+logs+Nilambur&gsrnamespace=6&gsrlimit=12&prop=imageinfo&iiprop=url%7Cextmetadata&iiurlwidth=1600&format=json"
+  },
+  {
+   "out": "ep1_malabar_map",
+   "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Malabar+map+18th+century&gsrnamespace=6&gsrlimit=12&prop=imageinfo&iiprop=url%7Cextmetadata&iiurlwidth=1600&format=json"
+  },
+  {
+   "out": "ep1_kalam",
+   "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=A.+P.+J.+Abdul+Kalam+portrait&gsrnamespace=6&gsrlimit=12&prop=imageinfo&iiprop=url%7Cextmetadata&iiurlwidth=1600&format=json"
+  },
+  {
+   "out": "ep1_timber",
+   "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=timber+logs+lorry+Kerala&gsrnamespace=6&gsrlimit=12&prop=imageinfo&iiprop=url%7Cextmetadata&iiurlwidth=1600&format=json"
+  },
+  {
+   "out": "ep1_sleeper",
+   "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=wooden+railway+sleepers+India&gsrnamespace=6&gsrlimit=12&prop=imageinfo&iiprop=url%7Cextmetadata&iiurlwidth=1600&format=json"
+  },
+  {
+   "out": "ep1_irula",
+   "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Irula+people&gsrnamespace=6&gsrlimit=12&prop=imageinfo&iiprop=url%7Cextmetadata&iiurlwidth=1600&format=json"
+  },
+  {
+   "out": "ep1_attappadi_dry",
+   "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Attappadi+dry&gsrnamespace=6&gsrlimit=12&prop=imageinfo&iiprop=url%7Cextmetadata&iiurlwidth=1600&format=json"
+  }
+ ],
+ "downloads": []
+}
