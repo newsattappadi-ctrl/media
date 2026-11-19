@@ -1,13 +1,17 @@
 {
- "queries": [
+ "queries": [],
+ "downloads": [
   {
-   "out": "baby_feet",
-   "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=newborn+baby+feet+filetype%3Abitmap&gsrnamespace=6&gsrlimit=40&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize%7Cmime&iiextmetadatafilter=LicenseShortName%7CArtist%7CImageDescription&iiurlwidth=1600&format=json"
+   "file": "baby_feet_1.jpg",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Newborn_baby_feet_%28Unsplash%29.jpg/1920px-Newborn_baby_feet_%28Unsplash%29.jpg"
   },
   {
-   "out": "infant_foot",
-   "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=infant+foot+close-up+filetype%3Abitmap&gsrnamespace=6&gsrlimit=40&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize%7Cmime&iiextmetadatafilter=LicenseShortName%7CArtist%7CImageDescription&iiurlwidth=1600&format=json"
+   "file": "baby_feet_2.jpg",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/Newborn_feet_nestled_gently_in_a_parent%27s_hand_highlighting_the_bond_of_love_and_care_at_home.jpg/1920px-Newborn_feet_nestled_gently_in_a_parent%27s_hand_highlighting_the_bond_of_love_and_care_at_home.jpg"
+  },
+  {
+   "file": "baby_feet_3.jpg",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/2018-06-07_Newborn_baby_feet_%26_mother.jpg/1920px-2018-06-07_Newborn_baby_feet_%26_mother.jpg"
   }
- ],
- "downloads": []
+ ]
 }
