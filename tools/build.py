@@ -96,6 +96,13 @@ h1,h2,.head p,.pt strong{font-family:BC,MJ}
 .follow .f3{font-family:MJ;font-size:34px;margin-top:34px;color:var(--grey)}
 """
 
+CSS += """
+.photo.pmd{height:400px}
+.pts.psm2{margin-top:10px}
+.pts.psm2 .pt{font-size:35px;padding:18px 0 14px}
+.punch{margin-top:16px;background:var(--blue);color:#fff;font-family:BC,MJ;font-weight:700;font-size:38px;line-height:1.35;border-radius:18px;padding:20px 30px 14px}
+"""
+
 def pts(items):
     return '<div class="pts">' + ''.join(f'<div class="pt"><i>{n}</i><div>{t}</div></div>' for n, t in enumerate(items, 1)) + '</div>'
 
@@ -125,6 +132,12 @@ def render(s):
         return (f'<div class="photo psm"><img src="{s["photo"]}" style="object-position:{s.get("photo_pos","center")}">'
                 f'<span class="pcredit">ചിത്രം: {s["credit"]}</span></div>'
                 f'<div class="head hp"><h2>{s["title"]}</h2></div>{rows}<div class="src">{s.get("note","")}</div>')
+    if t == 'photopoints':
+        tagp = f'<span class="ptag">{s.get("photo_tag","പ്രതീകാത്മക ചിത്രം")}</span>'
+        punch = f'<div class="punch">{s["punch"]}</div>' if s.get('punch') else ''
+        return (f'<div class="photo pmd"><img src="{s["photo"]}" style="object-position:{s.get("photo_pos","center")}">{tagp}'
+                f'<span class="pcredit">ചിത്രം: {s["credit"]}</span></div>'
+                f'<div class="head hp"><h2>{s["title"]}</h2></div>' + pts(s['points']).replace('class="pts"','class="pts psm2"') + punch)
     if t == 'points':
         return f'<div class="head"><h2>{s["title"]}</h2></div>' + pts(s['points'])
     if t == 'data':
