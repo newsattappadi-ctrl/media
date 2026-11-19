@@ -1,26 +1,19 @@
-download ok s_hills5.jpg 640x480
-download ok s_tribal_area.jpg 1145x540
-download ok s_scenery_b.jpg 1280x857
-download ok s_irulas1871.jpg 1331x1600
-download ok s_landscape_c.jpg 1600x720
-download ok s_landscape_d.jpg 1600x720
-download ok s_tribal_rhythms.jpg 1600x1163
-download ok s_tribal_deities.jpg 736x567
-download ok s_teak_nilambur.jpg 1600x1030
-download ok s_malabar_1744.jpg 800x600
-download ok s_kalam.jpg 1280x1600
-download ok s_irula_men.jpg 1228x1600
-download ok s_irula_women.jpg 1228x1600
-skip s_irulas1871.jpg
-file ok ep1_s0.wav
-file ok ep1_s1.wav
-file ok ep1_s2.wav
-file ok ep1_s3.wav
-file ok ep1_s4.wav
-file ok ep1_s5.wav
-file ok ep1_s6.wav
-file ok ep1_s7.wav
-file ok ep1_s8.wav
-file ok ep1_s9.wav
-file ok ep1_s10.wav
-file ok ep1_s11.wav
+query ok e2_kodung
+query ok e2_kodung2
+query ok e2_tribalw
+query ok e2_tribal2
+query ok e2_irulak
+query ok e2_kurumba
+query ok e2_muduga
+query ok e2_agali
+query ok e2_pudur
+query ok e2_millet
+query ok e2_nanji
+query ok e2_water
+query ok e2_hut
+query ok e2_sholayur
+query ok e2_bhavani
+query ok e2_anakatti
+query ok e2_malleeswaran
+query ok e2_ahads
+query ok e2_festival
