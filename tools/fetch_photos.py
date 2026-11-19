@@ -6,7 +6,7 @@ and saved to assets/library/<file>. Only the hosts in ALLOWED are contacted.
 Credits are recorded separately in assets/library/credits.json."""
 import json, pathlib, re, sys, time, io, urllib.request, urllib.parse
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-ALLOWED = ('.wikimedia.org', '.wikipedia.org', '.pexels.com', '.pixabay.com', '.cdnpk.net')
+ALLOWED = ('.wikimedia.org', '.wikipedia.org', '.pexels.com', '.pixabay.com', '.cdnpk.net', '.gettyimages.com')
 UA = 'NewsAttappadiBot/1.0 (https://github.com/newsattappadi-ctrl/media; newsattappadi@gmail.com)'
 
 def get(url):
