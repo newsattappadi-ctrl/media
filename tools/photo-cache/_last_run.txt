@@ -1,3 +1,1 @@
-query ok umb1
-query ok umb2
-query ok umb3
+
