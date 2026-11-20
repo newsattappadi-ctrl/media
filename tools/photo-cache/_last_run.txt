@@ -1,2 +1,10 @@
-file ok ep1v3_s0.wav
-file ok ep1v3_s9.wav
+query ok e3_barren
+query ok e3_waste
+query ok e3_dry
+query ok e3_sholayur
+query ok e3_agali
+query ok e3_grass
+query ok e3_hills
+query ok e3_pudur
+query ok e3_goolikadavu
+query ok e3_eastern
