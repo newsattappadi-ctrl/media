@@ -146,9 +146,11 @@ def dur(f): return float(subprocess.check_output(['ffprobe','-v','error','-show_
 # build segments
 segs=[]; n=0
 creds=set()
-for sec,shots in S:
-    d=dur(AUD+f'{sec}.wav')+GAP; per=d/len(shots)
-    for sh in shots:
+for sec,shots,at in S:
+    d=dur(AUD+f'{sec}.wav')+GAP
+    ends=at[1:]+[d]
+    for sh,st,en in zip(shots,at,ends):
+        per=en-st
         n+=1; base=T+f'b{n:02d}.png'; ov=T+f'o{n:02d}.png'; vid=T+f'v{n:02d}.mp4'
         if sh[0]=='timg':
             _,f,kind=sh; creds.add(cred.get(f,{}).get('credit',''))
@@ -188,7 +190,7 @@ open(T+'list.txt','w').write(''.join(f"file '{x}'\n" for x in segs))
 subprocess.run(['ffmpeg','-y','-v','error','-f','concat','-safe','0','-i',T+'list.txt','-c','copy',T+'video.mp4'],check=True)
 # audio: VO sections each followed by GAP silence
 parts=[]; 
-for sec,_ in S: parts.append(AUD+f'{sec}.wav')
+for sec,_,_ in S: parts.append(AUD+f'{sec}.wav')
 inp=[]; fc=''
 for i,p in enumerate(parts): inp+=['-i',p]; fc+=f'[{i}:a]aresample=48000,aformat=channel_layouts=mono,apad=pad_dur={GAP}[a{i}];'
 fc+=''.join(f'[a{i}]' for i in range(len(parts)))+f'concat=n={len(parts)}:v=0:a=1[vo]'
