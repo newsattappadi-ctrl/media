@@ -1,27 +1,14 @@
-query ok e4_nanji
-query ok e4_chandy
-query ok e4_rajan
-query ok e4_assembly
-query ok e4_hc
-query ok e4_wind
-query ok e4_windatp
-query ok e4_mannarkkad
-query ok e4_agali
-query ok e4_resort
-query ok e4_fence
-query ok e4_gold
-query ok e4_deed
-query ok e4_office
-query ok e4_tamil
-query ok e4_kottathara
-file ok ep2_s0.wav
-file ok ep2_s1.wav
-file ok ep2_s2.wav
-file ok ep2_s3.wav
-file ok ep2_s4.wav
-file ok ep2_s5.wav
-file ok ep2_s6.wav
-file ok ep2_s7.wav
-file ok ep2_s8.wav
-file ok ep2_s9.wav
-file ok ep2_s10.wav
+download ok v_village_office.jpg 960x1600
+download ok v_agali_mundanpara.jpg 1600x900
+download ok v_gold_ore.jpg 1600x668
+download ok v_highcourt.jpg 1600x865
+download ok v_chandy.jpg 1386x1600
+download ok v_rajan.jpg 1600x450
+download ok v_windmills.jpg 1600x1067
+download ok v_nanjiyamma_a.jpg 1600x1267
+download ok v_nanjiyamma_b.jpg 1280x720
+download ok v_kottappadam.jpg 1600x960
+download ok v_mannarkkad_river.jpg 1600x1200
+download ok v_hairpin.jpg 1600x900
+download ok v_mannarkkad82.jpg 1600x960
+download ok v_niyamasabha.jpg 1600x902
