@@ -147,10 +147,26 @@ def dur(f): return float(subprocess.check_output(['ffprobe','-v','error','-show_
 segs=[]; n=0
 creds=set()
 for sec,shots in S:
-    d=dur(AUD+f'ep1_{sec}.wav')+GAP; per=d/len(shots)
+    d=dur(AUD+f'{sec}.wav')+GAP; per=d/len(shots)
     for sh in shots:
         n+=1; base=T+f'b{n:02d}.png'; ov=T+f'o{n:02d}.png'; vid=T+f'v{n:02d}.mp4'
-        if sh[0]=='img':
+        if sh[0]=='timg':
+            _,f,kind=sh; creds.add(cred.get(f,{}).get('credit',''))
+            bg=ImageEnhance.Brightness(cover(L+f)).enhance(0.45); bg.save(base)
+            o=Image.new('RGBA',(W,H),(0,0,0,0)); dd=ImageDraw.Draw(o); cx=W/2; cy=H/2
+            l=logo.copy(); l.thumbnail((s(230),s(230))); o.alpha_composite(l,(int(cx-l.width/2),int(cy-s(560))))
+            if kind=='title':
+                dd.text((cx,cy-s(230)),'ന്യൂസ് അട്ടപ്പാടി അന്വേഷണ പരമ്പര',font=fit(dd,'ന്യൂസ് അട്ടപ്പാടി അന്വേഷണ പരമ്പര',s(52),W-s(100)),fill=TINT,anchor='mm',stroke_width=3,stroke_fill=(0,0,0))
+                dd.rectangle([s(40),cy-s(160),W-s(40),cy+s(170)],fill=NAVY+(225,))
+                dd.text((cx,cy-s(70)),'സ്വന്തം മണ്ണിലെ',font=mj(s(110)),fill=WHITE,anchor='mm'); dd.text((cx,cy+s(80)),'അഭയാർത്ഥികൾ',font=mj(s(110)),fill=WHITE,anchor='mm')
+            else:
+                dd.rectangle([s(40),cy-s(200),W-s(40),cy+s(200)],fill=NAVY+(225,))
+                dd.text((cx,cy-s(110)),'ഒന്നാം ഭാഗം',font=mj(s(70)),fill=TINT,anchor='mm')
+                dd.text((cx,cy+s(20)),'കാട് പോയി,',font=mj(s(100)),fill=WHITE,anchor='mm'); dd.text((cx,cy+s(140)),'പുഴ വറ്റി',font=mj(s(100)),fill=WHITE,anchor='mm')
+                dd.text((cx,cy+s(300)),'നാല് ഭാഗങ്ങൾ: കാട് · മണ്ണ് · ശരീരം · സ്വത്വം',font=fit(dd,'നാല് ഭാഗങ്ങൾ: കാട് · മണ്ണ് · ശരീരം · സ്വത്വം',s(44),W-s(100)),fill=WHITE,anchor='mm',stroke_width=3,stroke_fill=(0,0,0))
+            cf=mj(s(24)); dd.text((W-s(36),H-s(300)),'ചിത്രം: '+cred.get(f,{}).get('credit',''),font=cf,fill=WHITE,anchor='ra',stroke_width=2,stroke_fill=(0,0,0))
+            o.save(ov); kb=True
+        elif sh[0]=='img':
             _,f,cap,lab=sh; c=cred.get(f,{}).get('credit','')
             creds.add(c); cr=(lab+' · ' if lab else '')+'ചിത്രം: '+c
             cover(L+f).save(base); o=chrome(cr); o.alpha_composite(caption(cap)); o.save(ov); kb=True
@@ -172,7 +188,7 @@ open(T+'list.txt','w').write(''.join(f"file '{x}'\n" for x in segs))
 subprocess.run(['ffmpeg','-y','-v','error','-f','concat','-safe','0','-i',T+'list.txt','-c','copy',T+'video.mp4'],check=True)
 # audio: VO sections each followed by GAP silence
 parts=[]; 
-for sec,_ in S: parts.append(AUD+f'ep1_{sec}.wav')
+for sec,_ in S: parts.append(AUD+f'{sec}.wav')
 inp=[]; fc=''
 for i,p in enumerate(parts): inp+=['-i',p]; fc+=f'[{i}:a]aresample=48000,aformat=channel_layouts=mono,apad=pad_dur={GAP}[a{i}];'
 fc+=''.join(f'[a{i}]' for i in range(len(parts)))+f'concat=n={len(parts)}:v=0:a=1[vo]'
