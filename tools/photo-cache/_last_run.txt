@@ -1,12 +1,2 @@
-file ok ep1v2_s0.wav
-file ok ep1v2_s1.wav
-file ok ep1v2_s2.wav
-file ok ep1v2_s3.wav
-file ok ep1v2_s4.wav
-file ok ep1v2_s5.wav
-file ok ep1v2_s6.wav
-file ok ep1v2_s7.wav
-file ok ep1v2_s8.wav
-file ok ep1v2_s9.wav
-file ok ep1v2_s10.wav
-file ok ep1v2_s11.wav
+file ok ep1v3_s0.wav
+file ok ep1v3_s9.wav
