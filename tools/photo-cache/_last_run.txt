@@ -1,10 +1,3 @@
-query ok e3_barren
-query ok e3_waste
-query ok e3_dry
-query ok e3_sholayur
-query ok e3_agali
-query ok e3_grass
-query ok e3_hills
-query ok e3_pudur
-query ok e3_goolikadavu
-query ok e3_eastern
+download ok u_hills_b.jpg 1024x654
+download ok u_hills_c.jpg 960x720
+download ok u_hills_a.jpg 1600x900
