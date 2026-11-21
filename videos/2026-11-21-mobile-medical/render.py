@@ -72,7 +72,9 @@ def lower_third(im, name, role):
     return im
 
 def opener(im, kicker, lines):
-    d = ImageDraw.Draw(im); f = mj(76); lh = 104
+    d = ImageDraw.Draw(im); size = 76; f = mj(size)
+    while max(d.textlength(x, font=f) for x in lines) > W-150 and size > 40: size -= 2; f = mj(size)
+    lh = int(size*1.37)
     top = STRAP_Y - 22 - len(lines)*lh - 70
     kf = mj(42); kw = d.textlength(kicker, font=kf)+56
     d.rectangle([36, top, 36+kw, top+66], fill=BLUE); d.text((64, top+35), kicker, font=kf, fill=WHITE, anchor='lm')
