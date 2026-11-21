@@ -18,56 +18,69 @@ def wrap(d, t, f, mw):
     if c: o.append(c)
     return o
 
-logo = Image.open('logo.jpg').convert('RGBA')
+def round_logo():
+    # drop the square white background (flood fill from corners), then sit the badge on a white disc like earlier reels
+    from PIL import ImageDraw as _D
+    src = Image.open('logo.jpg').convert('RGB'); w, h = src.size
+    key = src.copy()
+    for c in [(0,0),(w-1,0),(0,h-1),(w-1,h-1)]: _D.floodfill(key, c, (255,0,255), thresh=40)
+    px = key.load(); m = Image.new('L', (w, h), 255); mp = m.load()
+    for y in range(h):
+        for x in range(w):
+            if px[x,y] == (255,0,255): mp[x,y] = 0
+    badge = src.convert('RGBA'); badge.putalpha(m)
+    cx, cy, r = 662, 652, 566
+    out = Image.new('RGBA', (w, h), (0,0,0,0)); _D.Draw(out).ellipse([cx-r, cy-r, cx+r, cy+r], fill=(255,255,255,255))
+    out.alpha_composite(badge)
+    return out.crop(out.getbbox())
+logo = round_logo()
 CREDIT = 'ദൃശ്യങ്ങൾ: കുമാർ അട്ടപ്പാടി'
-STRAP_H = 112; STRAP_Y = 1460
-VID_Y, VID_H = 470, 760   # foreground video band
+STRAP_H = 96; STRAP_Y = 1580
+VID_Y, VID_H = 330, 760   # foreground video band
 
-def base(headline, label='അഗളി'):
+def base(headline, label='പ്രധാന വാർത്ത'):
     im = Image.new('RGBA', (W, H), (0,0,0,0)); d = ImageDraw.Draw(im)
-    for y in range(260): d.line([(0,y),(W,y)], fill=(0,0,0,int(150*(1-y/260))))
-    l = logo.copy(); l.thumbnail((170,170), Image.LANCZOS); im.alpha_composite(l, (40, 70))
-    d.text((W-40, 84), '@newsattappadi', font=bc(46), fill=WHITE, anchor='ra')
-    d.text((W-40, 146), CREDIT, font=mj(30), fill=TINT, anchor='ra', stroke_width=2, stroke_fill=(0,0,0))
-    # TV strap: blue label + white headline bar (2 lines allowed)
-    lf = mj(42); lw = int(d.textlength(label, font=lf)+56)
-    hf = mj(44); lines = wrap(d, headline, hf, W-lw-50)
-    if len(lines) > 2:
-        hf = mj(38); lines = wrap(d, headline, hf, W-lw-50)
-    bh = max(STRAP_H, 58*len(lines)+30)
-    d.rectangle([0, STRAP_Y, lw, STRAP_Y+bh], fill=BLUE)
-    d.text((lw/2, STRAP_Y+bh/2+4), label, font=lf, fill=WHITE, anchor='mm')
-    d.rectangle([lw, STRAP_Y, W, STRAP_Y+bh], fill=WHITE)
-    d.rectangle([0, STRAP_Y+bh, W, STRAP_Y+bh+12], fill=NAVY)
-    y = STRAP_Y + bh/2 - (len(lines)-1)*29
-    for ln in lines:
-        d.text((lw+24, y+4), ln, font=hf, fill=NAVY, anchor='lm'); y += 58
+    for y in range(260): d.line([(0,y),(W,y)], fill=(0,0,0,int(130*(1-y/260))))
+    l = logo.copy(); l.thumbnail((150,150), Image.LANCZOS); im.alpha_composite(l, (36, 90))
+    d.text((W-36, 100), '@newsattappadi', font=bc(38), fill=WHITE, anchor='ra')
+    d.text((W-36, 150), 'അഗളി · അട്ടപ്പാടി', font=mj(30), fill=TINT, anchor='ra', stroke_width=2, stroke_fill=(0,0,0))
+    lf = mj(40); lw = int(d.textlength(label, font=lf)+56)
+    size = 52; hf = mj(size)
+    while d.textlength(headline, font=hf) > W-lw-50 and size > 30: size -= 2; hf = mj(size)
+    d.rectangle([0, STRAP_Y, lw, STRAP_Y+STRAP_H], fill=BLUE)
+    d.text((lw/2, STRAP_Y+STRAP_H/2+4), label, font=lf, fill=WHITE, anchor='mm')
+    d.rectangle([lw, STRAP_Y, W, STRAP_Y+STRAP_H], fill=WHITE)
+    d.rectangle([0, STRAP_Y+STRAP_H, W, STRAP_Y+STRAP_H+10], fill=NAVY)
+    d.text((lw+26, STRAP_Y+STRAP_H/2+4), headline, font=hf, fill=NAVY, anchor='lm')
+    d.text((W-36, STRAP_Y+STRAP_H+18), CREDIT, font=mj(26), fill=WHITE, anchor='ra', stroke_width=2, stroke_fill=(0,0,0))
     return im
 
 def caption(im, text):
     d = ImageDraw.Draw(im); f = mj(58); lines = wrap(d, text, f, W-160); lh = int(f.size*1.32)
-    bh = lh*len(lines)+34; by = VID_Y+VID_H+20; bw = max(d.textlength(x, font=f) for x in lines)+80
+    bh = lh*len(lines)+34; by = STRAP_Y-bh-22; bw = max(d.textlength(x, font=f) for x in lines)+80
     d.rectangle([40, by, 40+bw, by+bh], fill=NAVY+(240,)); d.rectangle([40, by, 52, by+bh], fill=BLUE)
     y = by+20
     for ln in lines: d.text((84, y), ln, font=f, fill=WHITE); y += lh
     return im
 
 def lower_third(im, name, role):
-    d = ImageDraw.Draw(im); by = VID_Y+VID_H+20
-    nf, rf = mj(60), mj(36)
+    d = ImageDraw.Draw(im); by = STRAP_Y-150-22
+    nf, rf = mj(58), mj(38)
     nw = d.textlength(name, font=nf)+80; rw = d.textlength(role, font=rf)+80
     d.rectangle([40, by, 40+nw, by+88], fill=BLUE); d.text((80, by+46), name, font=nf, fill=WHITE, anchor='lm')
     d.rectangle([40, by+88, 40+max(nw, rw), by+150], fill=WHITE); d.text((80, by+121), role, font=rf, fill=NAVY, anchor='lm')
     return im
 
 def opener(im, kicker, lines):
-    d = ImageDraw.Draw(im); top = 300
-    kf = mj(50); kw = d.textlength(kicker, font=kf)+60
-    d.rectangle([40, top, 40+kw, top+80], fill=BLUE); d.text((70, top+42), kicker, font=kf, fill=WHITE, anchor='lm')
-    f = mj(84); y = top+100
-    for ln in lines:
-        lw_ = d.textlength(ln, font=f)+60
-        d.rectangle([40, y, 40+lw_, y+118], fill=NAVY+(235,)); d.text((70, y+62), ln, font=f, fill=WHITE if ln != lines[-1] else TINT, anchor='lm'); y += 128
+    d = ImageDraw.Draw(im); f = mj(76); lh = 104
+    top = STRAP_Y - 22 - len(lines)*lh - 70
+    kf = mj(42); kw = d.textlength(kicker, font=kf)+56
+    d.rectangle([36, top, 36+kw, top+66], fill=BLUE); d.text((64, top+35), kicker, font=kf, fill=WHITE, anchor='lm')
+    y = top+70
+    bw = max(d.textlength(x, font=f) for x in lines)+70
+    d.rectangle([36, y, 36+bw, y+lh*len(lines)+10], fill=NAVY+(240,)); d.rectangle([36, y, 48, y+lh*len(lines)+10], fill=BLUE)
+    for i, ln in enumerate(lines):
+        d.text((76, y+8+i*lh+lh/2), ln, font=f, fill=TINT if i == len(lines)-1 else WHITE, anchor='lm')
     return im
 
 def endcard(path):
@@ -84,8 +97,8 @@ def endcard(path):
 NAME, ROLE = 'കെ.എ. തുളസി', 'പട്ടികജാതി-പട്ടികവർഗ വികസന വകുപ്പ് മന്ത്രി'
 STORIES = {
  'A': dict(
-   headline='അട്ടപ്പാടിയിൽ മൊബൈൽ മെഡിക്കൽ യൂണിറ്റുകൾ, മന്ത്രി ഫ്ലാഗ് ഓഫ് ചെയ്തു',
-   opener=('പ്രധാന വാർത്ത', ['മൊബൈൽ മെഡിക്കൽ', 'യൂണിറ്റുകൾ', 'വീണ്ടും നിരത്തിൽ']),
+   headline='മൊബൈൽ മെഡിക്കൽ യൂണിറ്റുകൾ വീണ്ടും',
+   opener=('അഗളി', ['മൊബൈൽ മെഡിക്കൽ യൂണിറ്റുകൾ', 'വീണ്ടും നിരത്തിൽ']),
    segs=[
      dict(vo='a0.wav', lead=0.8, open=True, vis=[('c2.mp4', 0.0)]),
      dict(vo='a1.wav', cap='മന്ത്രി കെ.എ. തുളസി ഫ്ലാഗ് ഓഫ് ചെയ്തു', vis=[('c4.mp4', 0.0), ('c6.mp4', 0.0)]),
@@ -93,8 +106,8 @@ STORIES = {
      dict(vo='a3.wav', cap='അടച്ചിട്ട കമ്മ്യൂണിറ്റി കിച്ചണുകൾ തുറക്കും', vis=[('c1.mp4', 0.0), ('c3.mp4', 160.0)]),
    ]),
  'B': dict(
-   headline='ശിശുമരണം രാഷ്ട്രീയ ആയുധമാക്കരുത്, പിണറായിക്കെതിരെ മന്ത്രി',
-   opener=('പ്രധാന വാർത്ത', ['ശിശുമരണം', 'രാഷ്ട്രീയ', 'ആയുധമാക്കരുത്']),
+   headline='ശിശുമരണം: പിണറായിക്കെതിരെ മന്ത്രി',
+   opener=('അഗളി', ['ശിശുമരണം രാഷ്ട്രീയ', 'ആയുധമാക്കരുത്']),
    segs=[
      dict(vo='b0.wav', lead=0.8, open=True, vis=[('c3.mp4', 28.0)]),
      dict(vo='b1.wav', cap='"കുട്ടികളുടെ മരണം രാഷ്ട്രീയ നേട്ടത്തിന് ഉപയോഗിക്കരുത്"', vis=[('c6.mp4', 0.5), ('c1.mp4', 0.5)]),
