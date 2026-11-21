@@ -63,15 +63,18 @@ def build(p, out):
     if p.get('subject'):
         s = Image.open(p['subject']).convert('RGBA'); s = s.crop(s.getbbox())
         sh = 780; s = s.resize((int(s.width*sh/s.height), sh), Image.LANCZOS)
-        if s.width > 540: s = s.crop((0, 0, 540, sh))   # keep the headline column clean
+        if s.width > 540:   # keep the headline column clean; soften the cut edge
+            s = s.crop((0, 0, 540, sh)); a = s.split()[3]
+            fade = Image.linear_gradient('L').rotate(90).resize((70, sh))
+            a.paste(Image.composite(Image.new('L', (70, sh), 0), a.crop((470, 0, 540, sh)), fade), (470, 0)); s.putalpha(a)
         shadow = Image.new('RGBA', s.size, (0,0,0,0)); shadow.putalpha(s.split()[3].point(lambda a: a*0.45))
         im.alpha_composite(shadow.filter(ImageFilter.GaussianBlur(14)), (34, 900-sh+16))
         im.alpha_composite(s, (20, 900-sh))
     elif p.get('photo'):
-        ph = Image.open(p['photo']).convert('RGB'); tw, th = 560, 700
+        ph = Image.open(p['photo']).convert('RGB'); tw, th = 520, 680
         r = max(tw/ph.width, th/ph.height); ph = ph.resize((int(ph.width*r), int(ph.height*r)), Image.LANCZOS)
         ph = ph.crop(((ph.width-tw)//2, (ph.height-th)//2, (ph.width-tw)//2+tw, (ph.height-th)//2+th))
-        d.rectangle([28, 168, 28+tw+16, 168+th+16], fill=BLUE); im.paste(ph, (36, 176))
+        d.rectangle([28, 176, 28+tw+16, 176+th+16], fill=BLUE); im.paste(ph, (36, 184))
     # logo top-right + handle top-left
     l = round_logo(); l.thumbnail((150,150), Image.LANCZOS); im.alpha_composite(l, (W-40-l.width, 40))
     d.text((44, 64), 'NEWS ATTAPPADI', font=bc(40), fill=WHITE)
@@ -103,9 +106,9 @@ def build(p, out):
         for k, ln in enumerate(wrap(d, p.get('role',''), rf, maxw-30)[:2]):
             d.text((x0+24, y+60+k*32), ln, font=rf, fill=TINT, anchor='lm')
     # summary + footer
-    sf = mj(36); sy = 950
+    sf = mj(42); sy = 960
     for ln in wrap(d, p.get('summary',''), sf, W-100)[:5]:
-        d.text((50, sy), ln, font=sf, fill=WHITE); sy += 54
+        d.text((50, sy), ln, font=sf, fill=WHITE); sy += 62
     d.rectangle([0, H-70, W, H], fill=BLUE)
     d.text((50, H-35), '@newsattappadi', font=bc(38), fill=WHITE, anchor='lm')
     if p.get('credit'): d.text((W-50, H-35), p['credit'], font=mj(26), fill=WHITE, anchor='rm')
