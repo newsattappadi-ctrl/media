@@ -1,5 +1,1 @@
-query ok m_cat_att
-query ok m_cat_tribes
-query ok m_s1
-query ok m_s2
-query ok m_s3
+download ok malleswaran_mudi_2.jpg 900x1600
