@@ -1,3 +1,5 @@
-query ok m_muduga
-query ok m_mudugar
-query ok m_tribal
+query ok m_cat_att
+query ok m_cat_tribes
+query ok m_s1
+query ok m_s2
+query ok m_s3
