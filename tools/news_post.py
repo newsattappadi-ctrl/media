@@ -63,7 +63,7 @@ def build(p, out):
     if p.get('subject'):
         s = Image.open(p['subject']).convert('RGBA'); s = s.crop(s.getbbox())
         sh = 780; s = s.resize((int(s.width*sh/s.height), sh), Image.LANCZOS)
-        if s.width > 620: s = s.crop((0, 0, 620, sh))
+        if s.width > 540: s = s.crop((0, 0, 540, sh))   # keep the headline column clean
         shadow = Image.new('RGBA', s.size, (0,0,0,0)); shadow.putalpha(s.split()[3].point(lambda a: a*0.45))
         im.alpha_composite(shadow.filter(ImageFilter.GaussianBlur(14)), (34, 900-sh+16))
         im.alpha_composite(s, (20, 900-sh))
@@ -77,7 +77,7 @@ def build(p, out):
     d.text((44, 64), 'NEWS ATTAPPADI', font=bc(40), fill=WHITE)
     d.text((44, 108), 'വാർത്തകൾ വിശദമായി', font=mj(28), fill=TINT)
     # headline stack on the right: kicker, then alternating plain / white-boxed lines
-    x0 = 560; maxw = W-40-x0
+    x0 = 580; maxw = W-40-x0
     y = 300
     if p.get('kicker'):
         kf = mj(34); kw = d.textlength(p['kicker'], font=kf)+40
