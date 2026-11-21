@@ -88,7 +88,7 @@ def opener(im, kicker, lines):
 def endcard(path):
     im = Image.new('RGB', (W, H), NAVY); d = ImageDraw.Draw(im)
     for i in range(0, W+H, 70): d.line([(i,0),(i-H,H)], fill=(10,64,88), width=3)
-    l = logo.copy(); l.thumbnail((420,420), Image.LANCZOS); im.paste(l.convert('RGB'), (int(W/2-l.width/2), 560))
+    l = logo.copy(); l.thumbnail((420,420), Image.LANCZOS); im.paste(l, (int(W/2-l.width/2), 560), l)
     d.text((W/2, 1070), 'NEWS ATTAPPADI', font=bc(110), fill=WHITE, anchor='mm')
     d.text((W/2, 1180), 'വാർത്തകൾ വിശദമായി', font=mj(64), fill=TINT, anchor='mm')
     d.rectangle([W/2-260, 1260, W/2+260, 1268], fill=BLUE)
