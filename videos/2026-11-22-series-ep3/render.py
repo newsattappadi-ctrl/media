@@ -155,6 +155,8 @@ def cover(path):
         bg2=im.resize((int(im.width*r)+2,int(im.height*r)+2)); x=(bg2.width-W)//2; y=(bg2.height-H)//2; return bg2.crop((x,y,x+W,y+H))
     r2=min(W/im.width,H*0.82/im.height); fg=im.resize((int(im.width*r2),int(im.height*r2))); bg.paste(fg,((W-fg.width)//2,(H-fg.height)//2 - s(40 if V else 0))); return bg
 def dur(f): return float(subprocess.check_output(['ffprobe','-v','error','-show_entries','format=duration','-of','csv=p=0',f]))
+from motion import Motion
+M=Motion(W,H,mj,bc,s,wrap,fit,'/home/user/ep3/geo')
 # build segments
 segs=[]; n=0
 creds=set()
@@ -185,7 +187,13 @@ for sec,shots,at in S:
             creds.add(c); cr=(lab+' · ' if lab else '')+'ചിത്രം: '+c
             cover(L+f).save(base); o=chrome(cr); o.alpha_composite(caption(cap)); o.save(ov); kb=True
         else:
-            card(sh[1],sh[2]).save(base); chrome(None).save(ov) if sh[1] not in('title','parts','next') else Image.new('RGBA',(W,H),(0,0,0,0)).save(ov); kb=False
+            fr=int(round(per*FPS))
+            func=M.map(sh[1],per) if sh[0]=='map' else M.card(sh[1],EP if sh[1]=='next' else sh[2],per)
+            (chrome(None) if sh[1]!='next' else Image.new('RGBA',(W,H),(0,0,0,0))).save(ov)
+            p=subprocess.Popen(['ffmpeg','-y','-v','error','-f','rawvideo','-pix_fmt','rgb24','-s',f'{W}x{H}','-r',str(FPS),'-i','-','-loop','1','-i',ov,
+                '-filter_complex','[0:v][1:v]overlay=0:0,format=yuv420p','-frames:v',str(fr),'-c:v','libx264','-preset','veryfast','-crf','20','-r',str(FPS),vid],stdin=subprocess.PIPE)
+            for k in range(fr): p.stdin.write(func(k/FPS).convert('RGB').tobytes())
+            p.stdin.close(); p.wait(); segs.append(vid); continue
         fr=int(round(per*FPS))
         z="min(1.0+0.0007*on,1.15)" if kb else "1.0+0.00012*on"
         vf=f"scale={int(W*1.2)}:{int(H*1.2)},zoompan=z='{z}':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d={fr}:s={W}x{H}:fps={FPS}[bg];[1:v]format=rgba,fade=t=in:st=0.15:d=0.35:alpha=1[ov];[bg][ov]overlay=0:0,format=yuv420p"
