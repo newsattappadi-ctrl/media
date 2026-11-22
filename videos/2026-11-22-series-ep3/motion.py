@@ -54,7 +54,7 @@ class Motion:
             big, lab = data
             num = re.match(r'^(₹?)([\d,]+(?:\.\d+)?)(.*)$', big)
             countable = bool(num) and not re.fullmatch(r'(19|20)\d\d', num.group(2).replace(',', '')) and '–' not in big
-            fn = bc if (big[:1].isdigit() or big[:1] == '₹') else mj
+            fn = bc if re.fullmatch(r'[0-9,.\-–%+? ]+', big) else mj
             f = self.fit(d0, big, s(300 if self.V else 280), W-s(120), fn)
             labs = [self.layer_text(ln, mj(s(60)), TINT) for ln in self.wrap(d0, lab, mj(s(60)), W-s(140))]
             static_big = self.layer_text(big, f, WHITE)
@@ -163,7 +163,7 @@ class Motion:
                     pts = [px(c, x, y) for x, y in r[::2]]
                     if len(pts) > 2: d.polygon(pts, fill=fill, outline=line)
             # Attappadi glow region
-            ax, ay = px(c, *ATT); rr = (0.17*W/c['span'])
+            ax, ay = px(c, *ATT); rr = min(0.17*W/c['span'], s(120))
             pulse = 0.5+0.5*math.sin(t*4)
             for k in range(6, 0, -1):
                 r = rr*(1+0.12*k) + s(6)*pulse
