@@ -195,8 +195,12 @@ for sec,shots,at in S:
             for k in range(fr): p.stdin.write(func(k/FPS).convert('RGB').tobytes())
             p.stdin.close(); p.wait(); segs.append(vid); continue
         fr=int(round(per*FPS))
-        z="min(1.0+0.0007*on,1.15)" if kb else "1.0+0.00012*on"
-        vf=f"scale={int(W*1.2)}:{int(H*1.2)},zoompan=z='{z}':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d={fr}:s={W}x{H}:fps={FPS}[bg];[1:v]format=rgba,fade=t=in:st=0.15:d=0.35:alpha=1[ov];[bg][ov]overlay=0:0,format=yuv420p"
+        mode=n%4
+        if mode==0: z,x=f"1.0+0.16*on/{fr}","iw/2-(iw/zoom/2)"
+        elif mode==1: z,x="1.14",f"(iw-iw/zoom)*on/{fr}"
+        elif mode==2: z,x=f"1.18-0.16*on/{fr}","iw/2-(iw/zoom/2)"
+        else: z,x="1.14",f"(iw-iw/zoom)*(1-on/{fr})"
+        vf=f"scale={int(W*1.2)}:{int(H*1.2)},zoompan=z='{z}':x='{x}':y='ih/2-(ih/zoom/2)':d={fr}:s={W}x{H}:fps={FPS}[bg];[1:v]format=rgba,fade=t=in:st=0.15:d=0.35:alpha=1[ov];[bg][ov]overlay=0:0,format=yuv420p"
         subprocess.run(['ffmpeg','-y','-v','error','-loop','1','-i',base,'-loop','1','-i',ov,'-filter_complex',vf,'-frames:v',str(fr),'-c:v','libx264','-preset','veryfast','-crf','20','-r',str(FPS),vid],check=True)
         segs.append(vid)
 # end card
