@@ -1,0 +1,17 @@
+{
+ "date_label": "22 NOV 2026",
+ "slides": [
+  {
+   "type": "weather",
+   "title": "അഗളിയിൽ ഇന്നത്തെ കാലാവസ്ഥ",
+   "photo": "../assets/library/scenery.jpg",
+   "credit": "RIYAMANEESHA / Wikimedia Commons (CC BY-SA 4.0)",
+   "weather": {
+    "high": 29,
+    "low": 20,
+    "rain": 0
+   },
+   "note": "നവംബർ 22, ഞായർ · ഭാഗികമായി മേഘാവൃതം, മഴ പ്രതീക്ഷയില്ല (0 mm) · അവലംബം: Freemeteo · ഫയൽ ചിത്രം"
+  }
+ ]
+}
