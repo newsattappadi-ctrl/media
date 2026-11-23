@@ -1,0 +1,17 @@
+{
+ "date_label": "23 NOV 2026",
+ "slides": [
+  {
+   "type": "weather",
+   "title": "അഗളിയിൽ ഇന്നത്തെ കാലാവസ്ഥ",
+   "photo": "../assets/library/hills_mist_2.jpg",
+   "credit": "Ramesh Kunnappully / Wikimedia Commons (CC BY-SA 4.0)",
+   "weather": {
+    "high": 26,
+    "low": 21,
+    "rain": 6
+   },
+   "note": "നവംബർ 23, തിങ്കൾ · ഇടയ്ക്ക് മേഘവും വെയിലും, മഴ സാധ്യത 6% · അവലംബം: AccuWeather · ഫയൽ ചിത്രം"
+  }
+ ]
+}
