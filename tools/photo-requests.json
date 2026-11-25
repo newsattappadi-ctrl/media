@@ -1,49 +1,136 @@
 {
-"queries": [
-{
-"out": "i1_mukkali",
-"url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&generator=search&gsrnamespace=6&gsrlimit=40&gsrsearch=Mukkali&prop=imageinfo&iiprop=url|extmetadata|size&iiurlwidth=1600"
-},
-{
-"out": "i1_attirampakkam",
-"url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&generator=search&gsrnamespace=6&gsrlimit=40&gsrsearch=Attirampakkam&prop=imageinfo&iiprop=url|extmetadata|size&iiurlwidth=1600"
-},
-{
-"out": "i1_microlith",
-"url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&generator=search&gsrnamespace=6&gsrlimit=40&gsrsearch=microliths%20India%20mesolithic&prop=imageinfo&iiprop=url|extmetadata|size&iiurlwidth=1600"
-},
-{
-"out": "i1_handaxe",
-"url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&generator=search&gsrnamespace=6&gsrlimit=40&gsrsearch=Acheulean%20handaxe%20India&prop=imageinfo&iiprop=url|extmetadata|size&iiurlwidth=1600"
-},
-{
-"out": "i1_mohenjodaro",
-"url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&generator=search&gsrnamespace=6&gsrlimit=40&gsrsearch=Mohenjo-daro&prop=imageinfo&iiprop=url|extmetadata|size&iiurlwidth=1600"
-},
-{
-"out": "i1_keezhadi",
-"url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&generator=search&gsrnamespace=6&gsrlimit=40&gsrsearch=Keezhadi&prop=imageinfo&iiprop=url|extmetadata|size&iiurlwidth=1600"
-},
-{
-"out": "i1_harappa",
-"url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&generator=search&gsrnamespace=6&gsrlimit=40&gsrsearch=Harappa%20ruins&prop=imageinfo&iiprop=url|extmetadata|size&iiurlwidth=1600"
-},
-{
-"out": "i1_silentvalley",
-"url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&generator=search&gsrnamespace=6&gsrlimit=40&gsrsearch=Silent%20Valley%20National%20Park&prop=imageinfo&iiprop=url|extmetadata|size&iiurlwidth=1600"
-},
-{
-"out": "i1_bhavani",
-"url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&generator=search&gsrnamespace=6&gsrlimit=40&gsrsearch=Bhavani%20river%20Kerala&prop=imageinfo&iiprop=url|extmetadata|size&iiurlwidth=1600"
-},
-{
-"out": "i1_irula",
-"url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&generator=search&gsrnamespace=6&gsrlimit=40&gsrsearch=Irula%20people&prop=imageinfo&iiprop=url|extmetadata|size&iiurlwidth=1600"
-},
-{
-"out": "i1_attappadi_people",
-"url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&generator=search&gsrnamespace=6&gsrlimit=40&gsrsearch=Attappadi%20tribal&prop=imageinfo&iiprop=url|extmetadata|size&iiurlwidth=1600"
-}
-],
-"downloads": []
+ "queries": [
+  {
+   "out": "a1_pyramid",
+   "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&generator=search&gsrnamespace=6&gsrlimit=40&gsrsearch=Great%20Pyramid%20of%20Giza&prop=imageinfo&iiprop=url|extmetadata|size&iiurlwidth=1600"
+  },
+  {
+   "out": "a1_stonehenge",
+   "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&generator=search&gsrnamespace=6&gsrlimit=40&gsrsearch=Stonehenge&prop=imageinfo&iiprop=url|extmetadata|size&iiurlwidth=1600"
+  },
+  {
+   "out": "a1_dolmen",
+   "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&generator=search&gsrnamespace=6&gsrlimit=40&gsrsearch=dolmen%20Kerala&prop=imageinfo&iiprop=url|extmetadata|size&iiurlwidth=1600"
+  },
+  {
+   "out": "a1_megalith",
+   "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&generator=search&gsrnamespace=6&gsrlimit=40&gsrsearch=Attappadi%20megalith&prop=imageinfo&iiprop=url|extmetadata|size&iiurlwidth=1600"
+  },
+  {
+   "out": "a1_malleeswaran",
+   "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&generator=search&gsrnamespace=6&gsrlimit=40&gsrsearch=Malleeswaram%20peak%20Attappadi&prop=imageinfo&iiprop=url|extmetadata|size&iiurlwidth=1600"
+  },
+  {
+   "out": "a1_srilanka",
+   "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&generator=search&gsrnamespace=6&gsrlimit=40&gsrsearch=Vedda%20Sri%20Lanka&prop=imageinfo&iiprop=url|extmetadata|size&iiurlwidth=1600"
+  },
+  {
+   "out": "a1_rockart",
+   "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&generator=search&gsrnamespace=6&gsrlimit=40&gsrsearch=rock%20art%20Kerala%20Edakkal&prop=imageinfo&iiprop=url|extmetadata|size&iiurlwidth=1600"
+  }
+ ],
+ "downloads": [
+  {
+   "file": "ai_campfire.jpg",
+   "url": "https://pikaso.cdnpk.net/private/production/6161062401/render.png?token=exp=1795996800~hmac=398079352cf4b89a43f0d5600a986056d392909ec6105fd8d53700ae98de3130"
+  },
+  {
+   "file": "ai_knapping.jpg",
+   "url": "https://pikaso.cdnpk.net/private/production/6161062406/render.png?token=exp=1795996800~hmac=39cc65c79800f5e33770bc412a8f7296ccf197a61730143bcf59f85504e3733f"
+  },
+  {
+   "file": "a1_attirampakkam.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Attirampakkam_stone_tools.jpg"
+  },
+  {
+   "file": "a1_harappa1.jpg",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Harappa_Ruins_-_I.jpg/1920px-Harappa_Ruins_-_I.jpg"
+  },
+  {
+   "file": "a1_harappa6.jpg",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/Harappa_Ruins_-_VI_-_Mounds.jpg/1920px-Harappa_Ruins_-_VI_-_Mounds.jpg"
+  },
+  {
+   "file": "a1_mohenjo.jpg",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Mohenjo-daro.jpg/1920px-Mohenjo-daro.jpg"
+  },
+  {
+   "file": "a1_mohenjo2010.jpg",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Mohenjo-daro-2010.jpg/1920px-Mohenjo-daro-2010.jpg"
+  },
+  {
+   "file": "a1_keeladi03.jpg",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Keeladi-archeological-site-photos_03.jpg/1920px-Keeladi-archeological-site-photos_03.jpg"
+  },
+  {
+   "file": "a1_keeladi19.jpg",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/Keeladi-archeological-site-photos_19.jpg/1920px-Keeladi-archeological-site-photos_19.jpg"
+  },
+  {
+   "file": "a1_sv_forest.jpg",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Evergreen_forest_of_Silent_Valley_Np_Kerala.jpg/1920px-Evergreen_forest_of_Silent_Valley_Np_Kerala.jpg"
+  }
+ ],
+ "files": [
+  {
+   "file": "adi1_a0.wav",
+   "url": "https://pikaso.cdnpk.net/private/production/6161163628/audio.wav?token=exp=1795996800~hmac=f7e0375ba8d8ebea905084c9f64da391cbb6eb4e9642987f8e6045224139be0b"
+  },
+  {
+   "file": "adi1_a1.wav",
+   "url": "https://pikaso.cdnpk.net/private/production/6161163899/audio.wav?token=exp=1795996800~hmac=bee00501f6338cd5aa631453812c9b2bd8730cf75ac007e4863e3a69c5653a6f"
+  },
+  {
+   "file": "adi1_a2.wav",
+   "url": "https://pikaso.cdnpk.net/private/production/6161164105/audio.wav?token=exp=1795996800~hmac=ae3fc32acef5ec983c6e680928f09f5465e6e6181cdc9e2f3e438358839567e6"
+  },
+  {
+   "file": "adi1_a3.wav",
+   "url": "https://pikaso.cdnpk.net/private/production/6161165093/audio.wav?token=exp=1795996800~hmac=7c6136827c5ee13c603f7189350cbaeec70c3aed8c92dabaff0e3fe52d1f175d"
+  },
+  {
+   "file": "adi1_a4.wav",
+   "url": "https://pikaso.cdnpk.net/private/production/6161166997/audio.wav?token=exp=1795996800~hmac=52b5d9cc8a719f2880775fcad0f035b8edc2b52154a26591455d5f21827402de"
+  },
+  {
+   "file": "adi1_a5.wav",
+   "url": "https://pikaso.cdnpk.net/private/production/6161166103/audio.wav?token=exp=1795996800~hmac=b08f1ec418b1adf5bcf0d1f47f22bb75869a5e238c6740d334d86409aa7b29e3"
+  },
+  {
+   "file": "adi1_a6.wav",
+   "url": "https://pikaso.cdnpk.net/private/production/6161166662/audio.wav?token=exp=1795996800~hmac=3cf354879ce994381bca179de80a88dd1b9200e8bfb6157fa1f385909110b7f9"
+  },
+  {
+   "file": "adi1_a7.wav",
+   "url": "https://pikaso.cdnpk.net/private/production/6161166437/audio.wav?token=exp=1795996800~hmac=9c709f58463dd9bed0d5a8fa29c0b58c1756206089daffded5ebddc9e8f4fd58"
+  },
+  {
+   "file": "adi1_music.mp3",
+   "url": "https://pikaso.cdnpk.net/private/production/6161758088/a34fd5fe-d3fb-4a0d-a0bb-c10f226dc3fb.mp3?token=exp=1795996800~hmac=b18ee1976e0563abcf4608ffde10af1a40303e6f71438cfdd2ef94049cf5a7a9"
+  },
+  {
+   "file": "sfx_spark.mp3",
+   "url": "https://pikaso.cdnpk.net/private/production/6161282658/a34fc656-7aac-46e4-ab82-c5ecd2ad42a3.mp3?token=exp=1795996800~hmac=36e1a14ea130885fe776a44190aa731bb2eebf1b9523c123b3561d88403a044e"
+  },
+  {
+   "file": "sfx_stone.mp3",
+   "url": "https://pikaso.cdnpk.net/private/production/6161758058/a34fd60a-a899-49b6-a2ec-ed940f10bf16.mp3?token=exp=1795996800~hmac=cef29c2d876bc00df770cf51b42e30996872ad91271b0e822ffd1f9846836eeb"
+  },
+  {
+   "file": "sfx_rewind.mp3",
+   "url": "https://pikaso.cdnpk.net/private/production/6161758207/a34fd60c-31cf-472a-b8db-c446378a1799.mp3?token=exp=1795996800~hmac=45bbdbf091eeeab5af68efe47ecbf2c9c779e516c980b75b88af7e45fbec5709"
+  },
+  {
+   "file": "sfx_boom.mp3",
+   "url": "https://pikaso.cdnpk.net/private/production/6161758329/a34fd60d-df77-4063-9d4b-6e215bb54462.mp3?token=exp=1795996800~hmac=ed5d41b0c1ccdf466c98930f5d45b208abcc555056390311fa437c5fb5ced624"
+  },
+  {
+   "file": "sfx_fire.mp3",
+   "url": "https://pikaso.cdnpk.net/private/production/6161758596/a34fd60f-8545-4769-9386-ca45bd1a5914.mp3?token=exp=1795996800~hmac=3ec90cf720efc10e646e1ad1a799b8afd683b6a862c26c5ea27b303d79e03b0c"
+  },
+  {
+   "file": "sfx_river.mp3",
+   "url": "https://pikaso.cdnpk.net/private/production/6161758877/a34fd611-26f6-46d1-984c-f80451c6f277.mp3?token=exp=1795996800~hmac=e04a27b0a846c20bb8862e37aebd047e3e21e0afebbe1af11de2b4e2e4a134ec"
+  }
+ ]
 }
