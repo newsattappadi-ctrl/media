@@ -145,8 +145,11 @@ def vchain2(inp, src, ss, d, label, full, zoom=1.0):
     if src.endswith('.jpg'):
         # still photo: blurred fill + fitted photo with slow push-in
         nfr = int(d*FPS)+2
+        iw, ih = Image.open(src).size
+        ph = 1100; pw = int(iw*ph/ih)//2*2
+        if pw > W-80: pw = (W-80)//2*2; ph = int(ih*pw/iw)//2*2
         return (f"[{inp}:v]split[{label}s1][{label}s2];[{label}s1]scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},boxblur=30:2,eq=brightness=-0.2,setsar=1,fps={FPS},trim=duration={d},setpts=PTS-STARTPTS[{label}bg];"
-                f"[{label}s2]scale=-2:1100,setsar=1,zoompan=z='1+0.0015*on':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d={nfr}:s=hd1080:fps={FPS},scale=-2:1100,crop='min(iw,{W-80})':1100,trim=duration={d},setpts=PTS-STARTPTS[{label}fg];"
+                f"[{label}s2]scale={pw}:{ph},setsar=1,zoompan=z='1+0.0012*on':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d={nfr}:s={pw}x{ph}:fps={FPS},trim=duration={d},setpts=PTS-STARTPTS[{label}fg];"
                 f"[{label}bg][{label}fg]overlay=(W-w)/2:300[{label}]")
     if full:
         zw = int(W*zoom)//2*2; zh = int(H*zoom)//2*2
