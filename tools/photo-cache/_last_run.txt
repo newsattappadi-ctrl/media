@@ -1,1 +1,5 @@
-file ok e4s9b.wav
+download ok e4_stk_envelope_cash.jpg 1600x1067
+download ok e4_stk_dollar_euro.jpg 1600x1067
+download ok e4_stk_envelope_put.jpg 1600x1067
+download ok e4_stk_food_boxes.jpg 1600x1067
+download ok e4_stk_coins.jpg 1600x1120
