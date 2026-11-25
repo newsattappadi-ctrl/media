@@ -1,1 +1,21 @@
-download ok malleswaran_mudi_2.jpg 900x1600
+query ok e4w_attappadi
+query ok e4w_attappady
+query ok e4w_irula
+query ok e4w_muduga
+query ok e4w_malleeswaran
+query ok e4w_agali
+query ok e4w_sholayur
+query ok e4w_kerala_tribal
+query ok e4w_tribal_dance_kerala
+query FAILED e4b_kambalam: host not allowed: www.bing.com
+query FAILED e4b_malleeswaran: host not allowed: www.bing.com
+query FAILED e4b_shivaratri: host not allowed: www.bing.com
+query FAILED e4b_moopan: host not allowed: www.bing.com
+query FAILED e4b_irula_dance: host not allowed: www.bing.com
+query FAILED e4b_ooru: host not allowed: www.bing.com
+query FAILED e4b_panchayat: host not allowed: www.bing.com
+query FAILED e4b_ngo: host not allowed: www.bing.com
+query FAILED e4b_oorukoottam: host not allowed: www.bing.com
+query FAILED e4b_millet_harvest: host not allowed: www.bing.com
+query FAILED e4b_granary: host not allowed: www.bing.com
+query FAILED e4b_journalist: host not allowed: www.bing.com
