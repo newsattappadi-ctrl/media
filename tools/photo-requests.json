@@ -1,10 +1,25 @@
 {
 "queries": [],
-"downloads": [],
-"files": [
+"downloads": [
 {
-"file": "e4s9b.wav",
-"url": "https://pikaso.cdnpk.net/private/production/6159731844/audio.wav?token=exp=1795996800~hmac=29c992dadec7772dfdd09f39dfafd50d5f1cf8c44c199c1ad3d7c1454168bbbc"
+"file": "e4_stk_envelope_cash.jpg",
+"url": "https://downloadscdn6.magnific.com/176474/8/7121.jpg?filename=man-holding-envelope-full-banknotes.jpg&token=exp=1795623800~hmac=859c48661b97b13815a97bfffa26a37f"
+},
+{
+"file": "e4_stk_dollar_euro.jpg",
+"url": "https://downloadscdn6.magnific.com/176474/8/7117.jpg?filename=hands-holding-dollars-euros.jpg&token=exp=1795623801~hmac=698fcb3c2ca9ea8e271d57fbf1232542"
+},
+{
+"file": "e4_stk_envelope_put.jpg",
+"url": "https://downloadscdn6.magnific.com/176474/8/7119.jpg?filename=hands-putting-banknotes-envelope.jpg&token=exp=1795623802~hmac=b4cea5e1a2fe07dac4818c58970f6b7a"
+},
+{
+"file": "e4_stk_food_boxes.jpg",
+"url": "https://downloadscdn6.magnific.com/637285/11/10759.jpg?filename=unrecognizable-volunteers-packing-donated-food-cardboard-boxes.jpg&token=exp=1795623803~hmac=6f21e8ea5bce911d1dfea90bbd432140"
+},
+{
+"file": "e4_stk_coins.jpg",
+"url": "https://downloadscdn6.magnific.com/176474/8/7015.jpg?filename=hands-holding-coins.jpg&token=exp=1795623804~hmac=0aae770110bb58a402993e9e70c1311d"
 }
 ]
 }
