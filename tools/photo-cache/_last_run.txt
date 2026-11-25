@@ -1,32 +1,5 @@
-query ok a1_pyramid
-query ok a1_stonehenge
-query ok a1_dolmen
-query ok a1_megalith
-query ok a1_malleeswaran
-query ok a1_srilanka
-query ok a1_rockart
-download ok ai_campfire.jpg 905x1600
-download ok ai_knapping.jpg 905x1600
-download ok a1_attirampakkam.jpg 759x355
-download ok a1_harappa1.jpg 1600x1131
-download ok a1_harappa6.jpg 1600x901
-download ok a1_mohenjo.jpg 1600x1200
-download ok a1_mohenjo2010.jpg 1600x1200
-download ok a1_keeladi03.jpg 1600x1067
-download ok a1_keeladi19.jpg 1067x1600
-download ok a1_sv_forest.jpg 1600x1067
-file ok adi1_a0.wav
-file ok adi1_a1.wav
-file ok adi1_a2.wav
-file ok adi1_a3.wav
-file ok adi1_a4.wav
-file ok adi1_a5.wav
-file ok adi1_a6.wav
-file ok adi1_a7.wav
-file ok adi1_music.mp3
-file ok sfx_spark.mp3
-file ok sfx_stone.mp3
-file ok sfx_rewind.mp3
-file ok sfx_boom.mp3
-file ok sfx_fire.mp3
-file ok sfx_river.mp3
+download ok a1_pyramid.jpg 1200x1600
+download ok a1_pyramid2.jpg 1200x1600
+download ok a1_stonehenge.jpg 1144x1600
+download ok a1_stonehenge2.jpg 1200x1600
+download ok a1_dolmen.jpg 1200x1600
