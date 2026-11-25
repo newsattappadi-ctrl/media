@@ -1,5 +1,8 @@
-download ok a1_pyramid.jpg 1200x1600
-download ok a1_pyramid2.jpg 1200x1600
-download ok a1_stonehenge.jpg 1144x1600
-download ok a1_stonehenge2.jpg 1200x1600
-download ok a1_dolmen.jpg 1200x1600
+file ok adi1_v_peak.mp4
+file ok adi1_v_family.mp4
+file ok adi1_v_knap.mp4
+file ok adi1_v_valley.mp4
+file ok adi1_v_hunters.mp4
+file ok adi1_v_elder.mp4
+file ok adi1_v_river.mp4
+file ok adi1_v_dig.mp4
