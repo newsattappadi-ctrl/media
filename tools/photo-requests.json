@@ -1,47 +1,21 @@
 {
- "queries": [],
- "downloads": [
+ "queries": [
   {
-   "file": "adi1_parchment.jpg",
-   "url": "https://pikaso.cdnpk.net/private/production/6162679018/render.png?token=exp=1795996800~hmac=f41689d25cddc28a688e0c2786186d814ec0ade411d92e98e4ec9fadc8c06deb"
+   "out": "x_pink_grasshopper",
+   "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=pink+grasshopper+filetype%3Abitmap&gsrnamespace=6&gsrlimit=40&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize%7Cmime&iiextmetadatafilter=LicenseShortName%7CArtist%7CImageDescription&iiurlwidth=1600&format=json"
+  },
+  {
+   "out": "x_pink_katydid",
+   "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=pink+katydid+erythrism+filetype%3Abitmap&gsrnamespace=6&gsrlimit=40&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize%7Cmime&iiextmetadatafilter=LicenseShortName%7CArtist%7CImageDescription&iiurlwidth=1600&format=json"
+  },
+  {
+   "out": "x_cardamom_pods",
+   "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=cardamom+pods+Elettaria+filetype%3Abitmap&gsrnamespace=6&gsrlimit=40&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize%7Cmime&iiextmetadatafilter=LicenseShortName%7CArtist%7CImageDescription&iiurlwidth=1600&format=json"
+  },
+  {
+   "out": "x_black_pepper_vine",
+   "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=black+pepper+vine+Piper+nigrum+filetype%3Abitmap&gsrnamespace=6&gsrlimit=40&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize%7Cmime&iiextmetadatafilter=LicenseShortName%7CArtist%7CImageDescription&iiurlwidth=1600&format=json"
   }
  ],
- "files": [
-  {
-   "file": "adi1_w_family.mp4",
-   "url": "https://pikaso.cdnpk.net/private/production/6162738321/e1683629-bed8-4664-887d-f53a276b4c29-0.mp4?token=exp=1795996800~hmac=03b81c46d060b06f870bd52fc48a337b8a10eef1cf72f9805627deb25719f0bd"
-  },
-  {
-   "file": "adi1_w_knap.mp4",
-   "url": "https://pikaso.cdnpk.net/private/production/6162741070/55bb5c41-32aa-4a6f-8101-700f37ee2384-0.mp4?token=exp=1795996800~hmac=7ae0dfe8bdc8dbfe3b7ee921e086039353fc15674538efc4f2a7fe16fadef67d"
-  },
-  {
-   "file": "adi1_w_hunters.mp4",
-   "url": "https://pikaso.cdnpk.net/private/production/6162740238/b107637d-0f31-4388-8384-d36b9c6a6881-0.mp4?token=exp=1795996800~hmac=17044cc25dc304bb784ca282eee8e3456aeb4d6d7bc6bdbb62bf486ff9e4cb80"
-  },
-  {
-   "file": "adi1_w_elder.mp4",
-   "url": "https://pikaso.cdnpk.net/private/production/6162740786/fc292ba0-3bda-4266-b8f8-3b1420a64601-0.mp4?token=exp=1795996800~hmac=3aa0d5834420b54ea3d03b8f31bc7450e3edd8b7f9a48fcd3e359004cf0b0382"
-  },
-  {
-   "file": "adi1_w_chief.mp4",
-   "url": "https://pikaso.cdnpk.net/private/production/6162738978/8c128cfe-cb3d-4789-b707-47dc5cb8bc34-0.mp4?token=exp=1795996800~hmac=eb7d6982f62c3e6d44c705cca1e259eed46827a19e75834ebd83b1a6336eb01c"
-  },
-  {
-   "file": "adi1_w_canoe.mp4",
-   "url": "https://pikaso.cdnpk.net/private/production/6162740323/97162195-2545-479d-8b8c-ad407615d93e-0.mp4?token=exp=1795996800~hmac=4e0a8ce70923debb4fa99aeacd274a10f8e6d681efe7554ad3405a554f9a1208"
-  },
-  {
-   "file": "adi1_w_river.mp4",
-   "url": "https://pikaso.cdnpk.net/private/production/6162749441/2b6682ce-b469-46db-a4ba-9396d723bff1-0.mp4?token=exp=1795996800~hmac=3a5a7db60e58af223b88559c576d2e764ba236179149c56cb8d6c3164007c723"
-  },
-  {
-   "file": "adi1_w_women.mp4",
-   "url": "https://pikaso.cdnpk.net/private/production/6162747989/f4103ee1-c29e-4b68-bc72-5babf41ba593-0.mp4?token=exp=1795996800~hmac=89873b71ff5bc7a3cc75b4eca6c38eae15e38e7431d43178865ea27d780e3561"
-  },
-  {
-   "file": "adi1_w_palm.mp4",
-   "url": "https://pikaso.cdnpk.net/private/production/6162690259/7956bbee-c8aa-41f7-b68d-8b08f09afe5e-0.mp4?token=exp=1795996800~hmac=649ac4d1c627ce8fd742b103629519fabdae4562992bf745ae361847df0aa34b"
-  }
- ]
+ "downloads": []
 }
