@@ -1,10 +1,4 @@
-download ok adi1_parchment.jpg 905x1600
-file ok adi1_w_family.mp4
-file ok adi1_w_knap.mp4
-file ok adi1_w_hunters.mp4
-file ok adi1_w_elder.mp4
-file ok adi1_w_chief.mp4
-file ok adi1_w_canoe.mp4
-file ok adi1_w_river.mp4
-file ok adi1_w_women.mp4
-file ok adi1_w_palm.mp4
+query ok x_pink_grasshopper
+query ok x_pink_katydid
+query ok x_cardamom_pods
+query ok x_black_pepper_vine
