@@ -1,21 +1,25 @@
 {
- "queries": [
+ "queries": [],
+ "downloads": [
   {
-   "out": "x_pink_grasshopper",
-   "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=pink+grasshopper+filetype%3Abitmap&gsrnamespace=6&gsrlimit=40&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize%7Cmime&iiextmetadatafilter=LicenseShortName%7CArtist%7CImageDescription&iiurlwidth=1600&format=json"
+   "file": "pink_grasshopper_nl.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Pink_Grasshopper_Erythrism_in_Netherlands_2025.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
   },
   {
-   "out": "x_pink_katydid",
-   "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=pink+katydid+erythrism+filetype%3Abitmap&gsrnamespace=6&gsrlimit=40&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize%7Cmime&iiextmetadatafilter=LicenseShortName%7CArtist%7CImageDescription&iiurlwidth=1600&format=json"
+   "file": "pink_grasshopper_de.jpg",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/Pseudochorthippus_parallelus_female_pink_morph_Landau_Suedpfalz.jpg/1920px-Pseudochorthippus_parallelus_female_pink_morph_Landau_Suedpfalz.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
   },
   {
-   "out": "x_cardamom_pods",
-   "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=cardamom+pods+Elettaria+filetype%3Abitmap&gsrnamespace=6&gsrlimit=40&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize%7Cmime&iiextmetadatafilter=LicenseShortName%7CArtist%7CImageDescription&iiurlwidth=1600&format=json"
+   "file": "cardamom_100.jpg",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/100_Cardamom_pods.jpg/1920px-100_Cardamom_pods.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
   },
   {
-   "out": "x_black_pepper_vine",
-   "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=black+pepper+vine+Piper+nigrum+filetype%3Abitmap&gsrnamespace=6&gsrlimit=40&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize%7Cmime&iiextmetadatafilter=LicenseShortName%7CArtist%7CImageDescription&iiurlwidth=1600&format=json"
+   "file": "cardamom_green_pods.jpg",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/Green_Cardamom_Pods.jpg/1920px-Green_Cardamom_Pods.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+  },
+  {
+   "file": "pepper_poles.jpg",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Sarawak_pepper_plant_climbing_poles.jpg/1920px-Sarawak_pepper_plant_climbing_poles.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
   }
- ],
- "downloads": []
+ ]
 }
