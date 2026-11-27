@@ -1,4 +1,5 @@
-query ok x_pink_grasshopper
-query ok x_pink_katydid
-query ok x_cardamom_pods
-query ok x_black_pepper_vine
+download ok pink_grasshopper_nl.jpg 1600x1067
+download ok pink_grasshopper_de.jpg 1600x1200
+download ok cardamom_100.jpg 1600x1067
+download ok cardamom_green_pods.jpg 1600x1600
+download ok pepper_poles.jpg 1600x1067
