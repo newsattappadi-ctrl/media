@@ -111,8 +111,8 @@ def vchain(inp, ss, d, label):
     # blurred fill background + zoomed 16:9 band in the middle
     return (f"[{inp}:v]trim=start={ss}:duration={d},setpts=PTS-STARTPTS,fps={FPS},split[{label}a][{label}b];"
             f"[{label}a]scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},boxblur=24:2,eq=brightness=-0.18[{label}bg];"
-            f"[{label}b]scale=-2:{VID_H},crop={W}:{VID_H}[{label}fg];"
-            f"[{label}bg][{label}fg]overlay=0:{VID_Y},setsar=1[{label}]")
+            f"[{label}b]scale={W}:-2[{label}fg];"
+            f"[{label}bg][{label}fg]overlay=0:(H-h)/2-120,setsar=1[{label}]")
 
 def is_vert(src):
     if src.endswith('.jpg'): return False
@@ -127,7 +127,7 @@ def vchain2(inp, src, ss, d, label, full, zoom=1.0):
         ph = 1100; pw = int(iw*ph/ih)//2*2
         if pw > W-80: pw = (W-80)//2*2; ph = int(ih*pw/iw)//2*2
         return (f"[{inp}:v]split[{label}s1][{label}s2];[{label}s1]scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},boxblur=30:2,eq=brightness=-0.2,setsar=1,fps={FPS},trim=duration={d},setpts=PTS-STARTPTS[{label}bg];"
-                f"[{label}s2]scale={pw}:{ph},setsar=1,zoompan=z='1+0.0012*on':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d={nfr}:s={pw}x{ph}:fps={FPS},trim=duration={d},setpts=PTS-STARTPTS[{label}fg];"
+                f"[{label}s2]scale={pw}:{ph},setsar=1,zoompan=z='min(1+0.0004*on,1.04)':x='iw/2-(iw/zoom/2)':y='0':d={nfr}:s={pw}x{ph}:fps={FPS},trim=duration={d},setpts=PTS-STARTPTS[{label}fg];"
                 f"[{label}bg][{label}fg]overlay=(W-w)/2:300[{label}]")
     if full or is_vert(src):
         zw = int(W*zoom)//2*2; zh = int(H*zoom)//2*2
